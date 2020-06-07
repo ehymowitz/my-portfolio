@@ -1,18 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
-import Header1 from "../components/header1"
-import Header2 from "../components/header2"
+import Layout from "../components/layout"
 
 
 export default function Home() {
   return (
-    <div>
-	    <Link to="/projects/">Projects</Link>
-	    <Link to="/projects/">Music</Link>
-	    <Link to="/projects/">Photography</Link>
-
-	    <Header1 header1Text="Hi, I'm Elie" />
-	    <Header2 header2Text="I like making things" />
-    </div>
+    <Layout>
+	    <h1>Hi, I'm Elie</h1>
+	    <h2>I like making things</h2>
+    </Layout>
   )
 }
