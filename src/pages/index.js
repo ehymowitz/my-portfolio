@@ -1,12 +1,18 @@
 import React from "react"
+import Layout from "../components/layout"
 import TopNav from "../components/topnav"
+import UpcomingShows from "../components/upcomingshows"
 
 
 export default function Home() {
   return (
-    <TopNav>
-	    <h1>Hi, I'm Elie</h1>
-	    <h2>I like making things</h2>
-    </TopNav>
+    <Layout>
+      <TopNav>
+      </TopNav>
+      <UpcomingShows>
+      </UpcomingShows>
+	    <h1 className = "center-text">Hi, I'm Elie</h1>
+	    <h2 className = "center-text">I like making things</h2>
+    </Layout>
   )
 }
