@@ -1,7 +1,7 @@
 import React from "react"
-import TopNav from "../components/topnav"
-import SocialLinks from "../components/sociallinks"
-import Resume from "../components/resume"
+import TopNav from "./topnav"
+import SocialLinks from "./sociallinks"
+import Resume from "./resume"
 
 
 export default function Layout({ children }) {

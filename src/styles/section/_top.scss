@@ -1,0 +1,36 @@
+.upcomingshows-container {
+  top: 120px;
+  right: 13%;
+  position: absolute;
+  display: none;
+}
+
+.hello-text {
+  top: 200px;
+  left: 25vw;
+  position: absolute;
+
+  h2{
+    margin-left: 20px;
+  }
+}
+
+.recent-projects {
+  top: 400px;
+  left: 10vw;
+  position: absolute;
+  .projects-container {
+    box-shadow: $shadow;
+    margin: 20px 0;
+    height: 180px;
+    width: 80vw;
+    background: $caroselgrey;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+}

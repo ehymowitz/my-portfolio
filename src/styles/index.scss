@@ -11,10 +11,13 @@
 @import './variables.scss';
 @import './layout.scss';
 
-// Components
-@import './components/topnav.scss';
-@import './components/sociallinks.scss';
-@import './components/resume.scss';
+// Fixed Components
+@import './fixed/topnav.scss';
+@import './fixed/sociallinks.scss';
+@import './fixed/resume.scss';
+
+// Cards
+@import './cards/carosel.scss';
 
 // Pages
-@import './pages/top.scss';
+@import './section/top.scss';

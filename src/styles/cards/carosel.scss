@@ -1,0 +1,32 @@
+.carosel-card  {
+  height: 150px;
+  width: 200px;
+  position: relative;
+  box-shadow: $shadow;
+  .icon {
+    position: absolute;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    right: -10px;
+    top: -10px;
+    box-shadow: $shadow;
+  }
+  .image {
+    background-size: cover;
+    height: 66%;
+  }
+  .text-container {
+    padding: 2px;
+    padding-left: 20px;
+    background-color: $background;
+
+    p {
+      margin: 3px 0;
+    }
+
+    small {
+      margin-left: 10px;
+    }
+  }
+}

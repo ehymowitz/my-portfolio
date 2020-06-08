@@ -1,10 +1,9 @@
 import React from "react"
-import Layout from "../components/layout"
 
 export default function Music() {
   return (
-    <Layout>
+    <div className='page-section'>
 
-    </Layout>
+    </div>
   )
 }
