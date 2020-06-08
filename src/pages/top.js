@@ -1,9 +1,9 @@
 import React from "react"
-import Carosel from "../components/cards/carosel"
+import Carousel from "../components/cards/carousel"
 
 export default function Top() {
   return (
-    <div className='page-section'>
+    <div className='page-section' id='top'>
       <div className = 'upcomingshows-container'>
         <p>Upcoming Shows</p>
       </div>
@@ -15,30 +15,30 @@ export default function Top() {
         <h3>Recent Projects</h3>
         <ul className = 'projects-container'>
           <li>
-            <Carosel
+            <Carousel
               title="Don't Die Food"
               desc="Mobile First Rails App"
               type="code"
               image='../../images/thumbs/DDF.png'
               link="http://www.dontdiefood.com/">
-            </Carosel>
+            </Carousel>
           </li>
           <li>
-            <Carosel
+            <Carousel
               title="OAP Live Online"
               desc="with Andria Piperni"
               type="music"
               image="../../images/thumbs/Andria.png"
               link ="https://youtu.be/D78yEbn_03I">
-            </Carosel>
+            </Carousel>
           </li>
           <li>
-            <Carosel
+            <Carousel
               title="Montreal Summer 2020"
               desc="Nikon D300"
               type="photo"
               image="../../images/thumbs/Quavo.png">
-            </Carosel>
+            </Carousel>
           </li>
         </ul>
       </div>

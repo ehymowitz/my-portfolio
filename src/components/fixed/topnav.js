@@ -5,17 +5,17 @@ export default function TopNav() {
   return (
     <div className= 'topnav-container'>
       <ul>
-        <Link className= 'topnav-link' to="/projects">
+        <a className= 'topnav-link' href="/#projects">
           <h2>Projects</h2>
-        </Link>
+        </a>
         <h2>&#124;</h2>
-        <Link className= 'topnav-link' to="/music/">
+        <a className= 'topnav-link' href="/#music">
           <h2>Music</h2>
-        </Link>
+        </a>
         <h2>&#124;</h2>
-        <Link className= 'topnav-link' to="/photography/">
+        <a className= 'topnav-link' href="/#photography">
           <h2>Photography</h2>
-        </Link>
+        </a>
       </ul>
     </div>
   )

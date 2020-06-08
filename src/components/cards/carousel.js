@@ -3,12 +3,12 @@ import { GiFClef } from "react-icons/gi";
 import { BsCodeSlash } from "react-icons/bs"
 import { RiCamera3Line } from "react-icons/ri"
 
-export default function Carosel(props) {
+export default function Carousel(props) {
   const icon = props.type
   const background = props.image
   const url = props.link
   return(
-    <div className="carosel-card">
+    <div className="carousel-card">
       <a href= {url} target="_blank">
               <div className="icon">
           {icon === "code" && <BsCodeSlash/> }
