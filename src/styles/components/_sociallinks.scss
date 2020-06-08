@@ -1,14 +1,15 @@
 .social-links {
   position: fixed;
   bottom: 40px;
-  right: 0px;
+  right: 45px;
+
   ul {
     display: flex;
     justify-content: space-evenly
   }
 
   a {
-    padding: 50px;
-    text-decoration: none;
+    font-size: 24px;
+    padding: 15px;
   }
 }

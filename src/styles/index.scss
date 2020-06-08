@@ -3,10 +3,13 @@
 // Font family: Asap
 // Font Family: Poppins
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap');
+// Font Family: M Plus Rounded
+// Fon Weight: 900
 
 // General
-@import './layout.scss';
 @import './variables.scss';
+@import './layout.scss';
 
 // Components
 @import './components/sidenav.scss';

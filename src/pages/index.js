@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Resume from "../components/resumelink"
+import { FaScroll } from "react-icons/fa"
 
 
 export default function Home() {
@@ -13,8 +13,9 @@ export default function Home() {
   	    <h1 className = 'primary'>Hi, I'm Elie</h1>
   	    <h2 className = 'secondary'>I like making things</h2>
       </div>
-      <Resume>
-      </Resume>
+      <div className="resume">
+        <a href="" target="_blank">CV</a>
+      </div>
     </Layout>
   )
 }
