@@ -1,19 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
-import { css } from "@emotion/core"
-import linkStyles from "../styles/components/topnav.module.scss"
 
 export default function TopNav() {
   return (
-    <div
-        css={css`
-        text-align: center;
-      `}
-    >
+    <div className= 'topnav-container'>
       <ul>
-        <Link className= {linkStyles.link} to="/projects">Projects</Link>
-        <Link className= {linkStyles.link} to="/music/">Music</Link>
-        <Link className= {linkStyles.link} to="/photography/">Photography</Link>
+        <Link className= 'topnav-link' to="/projects">
+          <h2>Projects</h2>
+        </Link>
+        <h2>&#124;</h2>
+        <Link className= 'topnav-link' to="/music/">
+          <h2>Music</h2>
+        </Link>
+        <h2>&#124;</h2>
+        <Link className= 'topnav-link' to="/photography/">
+          <h2>Photography</h2>
+        </Link>
       </ul>
     </div>
   )

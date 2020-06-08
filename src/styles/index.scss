@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Poppins&display=swap');
+// Font family: Asap
+// Font Family: Poppins
+
+
+// General
+@import './layout.scss';
+@import './variables.scss';
+
+// Components
+@import './components/sidenav.scss';
+@import './components/topnav.scss';
+@import './components/sociallinks.scss';
+
+// Pages
+@import './pages/home.scss';

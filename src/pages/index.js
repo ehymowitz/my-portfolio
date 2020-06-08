@@ -1,18 +1,20 @@
 import React from "react"
 import Layout from "../components/layout"
-import TopNav from "../components/topnav"
-import UpcomingShows from "../components/upcomingshows"
+import Resume from "../components/resumelink"
 
 
 export default function Home() {
   return (
     <Layout>
-      <TopNav>
-      </TopNav>
-      <UpcomingShows>
-      </UpcomingShows>
-	    <h1 className = "center-text">Hi, I'm Elie</h1>
-	    <h2 className = "center-text">I like making things</h2>
+      <div className = 'upcomingshows-container'>
+        <p>Upcoming Shows</p>
+      </div>
+      <div className = 'hello-text'>
+  	    <h1 className = 'primary'>Hi, I'm Elie</h1>
+  	    <h2 className = 'secondary'>I like making things</h2>
+      </div>
+      <Resume>
+      </Resume>
     </Layout>
   )
 }

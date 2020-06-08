@@ -1,14 +1,19 @@
 import React from "react"
-import { css } from "@emotion/core"
+import TopNav from "../components/topnav"
+import SideNav from "../components/sidenav"
+import SocialLinks from "../components/sociallinks"
+
 
 export default function Layout({ children }) {
   return (
-      <div
-        css={css`
-          padding: 20px 10px;
-        `}
-      >
+      <div>
+        <TopNav>
+        </TopNav>
+        <SideNav>
+        </SideNav>
         {children}
+        <SocialLinks>
+        </SocialLinks>
       </div>
     )
 }

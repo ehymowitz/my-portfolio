@@ -1,0 +1,14 @@
+.social-links {
+  position: fixed;
+  bottom: 40px;
+  right: 0px;
+  ul {
+    display: flex;
+    justify-content: space-evenly
+  }
+
+  a {
+    padding: 50px;
+    text-decoration: none;
+  }
+}

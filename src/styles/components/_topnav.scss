@@ -1,0 +1,17 @@
+.topnav-container {
+  padding: 3%;
+  width: 60vw;
+  position: fixed;
+  right: 0;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
