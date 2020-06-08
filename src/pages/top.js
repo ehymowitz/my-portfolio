@@ -18,28 +18,26 @@ export default function Top() {
             <Carosel
               title="Don't Die Food"
               desc="Mobile First Rails App"
-              type="code">
-            </Carosel>
-          </li>
-          <li>
-            <Carosel
-              title="Interactive Animations"
-              desc="p5.js interactive sketches"
-              type="code">
+              type="code"
+              image='../../images/thumbs/DDF.png'
+              link="http://www.dontdiefood.com/">
             </Carosel>
           </li>
           <li>
             <Carosel
               title="OAP Live Online"
               desc="with Andria Piperni"
-              type="music">
+              type="music"
+              image="../../images/thumbs/Andria.png"
+              link ="https://youtu.be/D78yEbn_03I">
             </Carosel>
           </li>
           <li>
             <Carosel
               title="Montreal Summer 2020"
               desc="Nikon D300"
-              type="photo">
+              type="photo"
+              image="../../images/thumbs/Quavo.png">
             </Carosel>
           </li>
         </ul>

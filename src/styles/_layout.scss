@@ -7,6 +7,7 @@
 
 h1, h2, h3 {
   font-family: Poppins;
+  background-color: rgba(0,0,0,0);
 }
 
 p, a, small {
@@ -15,10 +16,16 @@ p, a, small {
 
 a{
   text-decoration: none;
+  background-color: rgba(0,0,0,0);
 }
 
 ul {
   list-style: none;
+  background-color: rgba(0,0,0,0);
+}
+
+div, svg, li {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .static-object > * {
@@ -26,7 +33,7 @@ ul {
 }
 
 .page-section {
-  height: 100vh;
+  height: 700px;
   position: relative;
   z-index: 0;
 }
