@@ -1,19 +1,19 @@
 import React from "react"
 import TopNav from "../components/topnav"
-import SideNav from "../components/sidenav"
 import SocialLinks from "../components/sociallinks"
+import Resume from "../components/resume"
 
 
 export default function Layout({ children }) {
   return (
-      <div>
+      <div className='static-object'>
         <TopNav>
         </TopNav>
-        <SideNav>
-        </SideNav>
         {children}
         <SocialLinks>
         </SocialLinks>
+        <Resume>
+        </Resume>
       </div>
     )
 }

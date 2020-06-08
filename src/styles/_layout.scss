@@ -20,3 +20,13 @@ a{
 ul {
   list-style: none;
 }
+
+.static-object > *{
+  z-index: 1;
+}
+
+.page-section {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}

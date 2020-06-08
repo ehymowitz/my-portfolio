@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import {
   FaFacebookF, FaInstagram, FaSpotify, FaLinkedinIn, FaGithub
 } from 'react-icons/fa';
