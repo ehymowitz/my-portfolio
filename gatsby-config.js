@@ -6,7 +6,22 @@
 
 module.exports = {
   plugins: [
-            `gatsby-plugin-sass`,
-            `gatsby-plugin-emotion`
-           ],
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          {
+          family: `Roboto Mono`,
+          variants: [`400`, `700`]
+          },
+          {
+          family: `Roboto`,
+          subsets: [`latin`]
+          },
+        ],
+      },
+    }
+  ],
 }
