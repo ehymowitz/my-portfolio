@@ -4,9 +4,6 @@ import Carousel from "../components/cards/carousel"
 export default function Top() {
   return (
     <div className='page-section' id='top'>
-      <div className = 'upcomingshows-container'>
-        <p>Upcoming Shows</p>
-      </div>
       <div className = 'hello-text'>
         <h1>Hi, I'm Elie</h1>
         <h2>I'm a web developer / musician / maker of things.</h2>

@@ -1,6 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
 
-export default function Collection(props) {
+export default function PhotoCover(props) {
   return(
     <div className="collection-cover">
       <img src={props.cover} alt={props.title}/>
