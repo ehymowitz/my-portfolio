@@ -35,7 +35,8 @@ export default function Top() {
               title="Montreal Summer 2020"
               desc="Nikon D300"
               type="photo"
-              image="/images/recent/Quavo.png">
+              image="/images/recent/Quavo.png"
+              link="/#photography">
             </Carousel>
           </li>
         </ul>
