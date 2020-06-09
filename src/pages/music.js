@@ -14,6 +14,11 @@ export default function Music() {
           band="Andria Piperni">
         </MusicCard>
         <MusicCard
+          link="https://www.youtube.com/embed/LIs5VFrIQmQ"
+          title="Say Something [Live at Artjam]"
+          band="Andria Piperni">
+        </MusicCard>
+        <MusicCard
           link="https://www.youtube.com/embed/LJVebBmJKI8"
           title="Disco Yes by Tom Misch [Live at Blue Dog]"
           band="Cooler Than Freezing">
@@ -27,11 +32,6 @@ export default function Music() {
           link="https://www.youtube.com/embed/Q0QxADdTedk"
           title="Mystery of Love [Live Studio]"
           band="Aquarius Dreams">
-        </MusicCard>
-        <MusicCard
-          link="https://www.youtube.com/embed/LIs5VFrIQmQ"
-          title="Say Something [Live at Artjam]"
-          band="Andria Piperni">
         </MusicCard>
         <MusicCard
           link="https://www.youtube.com/embed/vxTMA7L_Ckg"

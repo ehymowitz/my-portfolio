@@ -4,6 +4,9 @@ import { Link } from "gatsby"
 export default function TopNav() {
   return (
     <div className= 'topnav-container'>
+      <a className='top-link' href="/#top" >
+        EH
+      </a>
       <ul>
         <a className= 'topnav-link' href="/#projects">
           <h2>Projects</h2>
