@@ -9,31 +9,31 @@ export default function Photography() {
       </div>
       <div className="photo-collections">
         <Collection
-          cover="/images/thumbs/Quavo.png"
+          cover="/images/photos/covers/MTLSummer2020.jpeg"
           title="Montreal Summer 2020"
           camera="Nikon D300"
         >
         </Collection>
         <Collection
-          cover="/images/thumbs/Quavo.png"
+          cover="/images/photos/covers/Concerts.jpeg"
           title="Concert Photography"
           camera="Nikon D300"
         >
         </Collection>
         <Collection
-          cover="/images/thumbs/Quavo.png"
+          cover="/images/photos/covers/MTLWinter2020.jpeg"
           title="Montreal Winter 2020"
           camera="Nikon D300, Film"
         >
         </Collection>
         <Collection
-          cover="/images/thumbs/Quavo.png"
+          cover="/images/photos/covers/Van2020.jpeg"
           title="Vancouver 2020"
-          camera="Nikon D300, Film"
+          camera="Nikon D300"
         >
         </Collection>
         <Collection
-          cover="/images/thumbs/Quavo.png"
+          cover="/images/photos/covers/Belize2019.jpeg"
           title="Belize 2019"
           camera="Nikon D300, Film"
         >
