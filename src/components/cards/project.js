@@ -6,6 +6,9 @@ export default function Project(props) {
   const api = "API: " + props.api
   return (
     <div className={classes}>
+        <a href={props.link} target="_blank">
+          <img src= {props.image} alt={props.title}/>
+        </a>
         <div className="project-text">
           <h2>
             {props.title}
@@ -20,9 +23,6 @@ export default function Project(props) {
             {props.api && api}
           </p>
         </div>
-        <a href={props.link} target="_blank">
-          <img src= {props.image} alt={props.title}/>
-        </a>
     </div>
   )
 }

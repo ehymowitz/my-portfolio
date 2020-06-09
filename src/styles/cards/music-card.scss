@@ -1,0 +1,25 @@
+.music-card{
+  margin: 0 40px;
+  justify-content: space-between;
+
+  .music-text {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 15px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-bottom: 2px;
+    }
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+    box-shadow: $shadow;
+  }
+}
+

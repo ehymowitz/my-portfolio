@@ -11,9 +11,10 @@
 }
 
 .music-container {
+  display: flex;
   position: relative;
   top: 150px;
-  width: 70vw;
-  margin: 20px auto;
-  overflow: auto;
+  width: 80vw;
+  margin: 0 auto;
+  overflow: scroll;
 }

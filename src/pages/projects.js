@@ -9,7 +9,7 @@ export default function Projects() {
       </div>
       <div className="project-container">
         <Project
-          orient="right"
+          orient="left"
           link="http://www.dontdiefood.com/"
           title="Don't Die Food"
           desc="Mobile-first webapp for sharing food in local communities"
@@ -18,7 +18,7 @@ export default function Projects() {
           image="../../images/full/DDF.png">
         </Project>
         <Project
-          orient="left"
+          orient="right"
           link="https://blockwagon.herokuapp.com/"
           title="Blockwagon"
           desc="Online marketplace for VHS tapes"
@@ -27,7 +27,7 @@ export default function Projects() {
           image="../../images/full/Blockwagon.png">>
         </Project>
         <Project
-          orient="right"
+          orient="left"
           link="https://github.com/ehymowitz/Graphics-Projects"
           title="Interactive Animations"
           desc="Interactive graphics projects"
