@@ -1,0 +1,38 @@
+.project-card.right {
+  flex-flow: row-reverse;
+}
+
+.project-card.left {
+  flex-flow: row;
+}
+
+.project-card{
+  margin: 20px 0;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+
+  .project-text {
+    border-top: 1px solid black;
+    padding: 25px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 2px;
+    }
+  }
+
+  a {
+    height: 100%;
+
+    img {
+      height: 100%;
+      box-shadow: $shadow;
+    }
+  }
+}
+

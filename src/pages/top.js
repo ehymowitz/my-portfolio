@@ -9,7 +9,8 @@ export default function Top() {
       </div>
       <div className = 'hello-text'>
         <h1>Hi, I'm Elie</h1>
-        <h2>I like making things</h2>
+        <h2>I'm a web developer / musician / maker of things.</h2>
+        <h2>Born in Seattle, living in Montreal.</h2>
       </div>
       <div className = 'recent-projects'>
         <h3>Recent Projects</h3>

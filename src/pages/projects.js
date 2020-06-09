@@ -1,10 +1,31 @@
 import React from "react"
+import Project from "../components/cards/project"
 
 export default function Projects() {
   return (
     <div className='page-section' id='projects'>
       <div className="heading">
-        <h1>Things I've Made</h1>
+        <h1>Projects I've Developed</h1>
+      </div>
+      <div className="project-container">
+        <Project
+          orient="right"
+          link="http://www.dontdiefood.com/"
+          title="Don't Die Food"
+          desc="Mobile-first webapp for sharing food in local communities"
+          stack="Ruby on Rails - Ruby, HTML, CSS, JS "
+          api="Spoonacular for recipe generation"
+          image="../../images/full/DDF.png">
+        </Project>
+        <Project
+          orient="left"
+          link="https://github.com/ehymowitz/Graphics-Projects"
+          title="Interactive Animations"
+          desc="Interactive graphics projects"
+          stack="Stack: p5.js, initially written in Processing (Java)"
+          api=""
+          image="../../images/full/Graphics.png">>
+        </Project>
       </div>
     </div>
   )

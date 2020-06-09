@@ -6,29 +6,27 @@
 }
 
 .hello-text {
-  top: 200px;
-  left: 25vw;
-  position: absolute;
-
-  h2{
-    margin-left: 20px;
-  }
+  top: 175px;
+  width: 60vw;
+  margin: 0 auto;
+  position: relative;
+  right: 5vw;
 }
 
 .recent-projects {
-  top: 400px;
-  left: 10vw;
-  position: absolute;
+  top: 325px;
+  position: relative;
+  margin: auto;
+  width: 80vw;
 
   h3 {
     position: relative;
-    left: 5vw;
+    left: 7vw;
     bottom: 20px;
   }
 
   ul {
     height: 180px;
-    width: 80vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

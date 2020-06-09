@@ -2,10 +2,18 @@
   .heading {
     top: 100px;
     left: 5vw;
-    position: absolute;
+    position: relative;
 
     h1{
       margin-left: 20px;
     }
   }
+}
+
+.project-container {
+  position: relative;
+  top: 150px;
+  width: 70vw;
+  margin: 20px auto;
+  overflow: auto;
 }
