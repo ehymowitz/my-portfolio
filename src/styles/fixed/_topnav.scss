@@ -1,17 +1,23 @@
 .topnav-container {
-  padding: 3%;
-  width: 60vw;
+  width: 100vw;
   position: fixed;
   right: 0;
 
   .top-link {
-    position: absolute;
+    padding: 3%;
+    float: left;
+    position: relative;
+    left:45px;
     font-size: 24px;
     font-family: 'M PLUS Rounded 1c';
     font-weight: 900;
+
   }
 
   ul {
+    padding: 3%;
+    float: right;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
   }
