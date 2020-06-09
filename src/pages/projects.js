@@ -19,10 +19,19 @@ export default function Projects() {
         </Project>
         <Project
           orient="left"
+          link="https://blockwagon.herokuapp.com/"
+          title="Blockwagon"
+          desc="Online marketplace for VHS tapes"
+          stack="Ruby on Rails - Ruby, HTML, CSS, JS "
+          api="OMDB for generating video information"
+          image="../../images/full/Blockwagon.png">>
+        </Project>
+        <Project
+          orient="right"
           link="https://github.com/ehymowitz/Graphics-Projects"
           title="Interactive Animations"
           desc="Interactive graphics projects"
-          stack="Stack: p5.js, initially written in Processing (Java)"
+          stack="p5.js, initially written in Processing (Java)"
           api=""
           image="../../images/full/Graphics.png">>
         </Project>
