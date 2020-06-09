@@ -15,7 +15,7 @@ export default function Projects() {
           desc="Mobile-first webapp for sharing food in local communities"
           stack="Ruby on Rails - Ruby, HTML, CSS, JS "
           api="Spoonacular for recipe generation"
-          image="../../images/full/DDF.png">
+          image="/images/projects/DDF.png">
         </Project>
         <Project
           orient="right"
@@ -24,7 +24,7 @@ export default function Projects() {
           desc="Online marketplace for VHS tapes"
           stack="Ruby on Rails - Ruby, HTML, CSS, JS "
           api="OMDB for generating video information"
-          image="../../images/full/Blockwagon.png">>
+          image="/images/projects/Blockwagon.png">>
         </Project>
         <Project
           orient="left"
@@ -33,7 +33,7 @@ export default function Projects() {
           desc="Interactive graphics projects"
           stack="p5.js, initially written in Processing (Java)"
           api=""
-          image="../../images/full/Graphics.png">>
+          image="/images/projects/Graphics.png">>
         </Project>
       </div>
     </div>

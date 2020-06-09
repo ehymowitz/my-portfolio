@@ -20,7 +20,7 @@ export default function Top() {
               title="Don't Die Food"
               desc="Mobile First Rails App"
               type="code"
-              image='../../images/thumbs/DDF.png'
+              image='/images/recent/DDF.png'
               link="http://www.dontdiefood.com/">
             </Carousel>
           </li>
@@ -29,7 +29,7 @@ export default function Top() {
               title="OAP Live Online"
               desc="with Andria Piperni"
               type="music"
-              image="../../images/thumbs/Andria.png"
+              image="/images/recent/Andria.png"
               link ="https://youtu.be/D78yEbn_03I">
             </Carousel>
           </li>
@@ -38,7 +38,7 @@ export default function Top() {
               title="Montreal Summer 2020"
               desc="Nikon D300"
               type="photo"
-              image="../../images/thumbs/Quavo.png">
+              image="/images/recent/Quavo.png">
             </Carousel>
           </li>
         </ul>

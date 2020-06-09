@@ -1,6 +1,6 @@
 #photography{
   .heading {
-    top: 40px;
+    top: 100px;
     margin-left: 5vw;
     position: relative;
 
@@ -8,4 +8,13 @@
       margin-left: 20px;
     }
   }
+}
+
+.photo-collections {
+  position: relative;
+  top: 150px;
+  width: 80vw;
+  margin: 20px auto;
+  display: flex;
+  overflow: auto;
 }
