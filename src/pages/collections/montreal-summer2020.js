@@ -19,91 +19,91 @@ export default function PhotoCover(props) {
   };
 
   const photos = [
-  {
-    src: "/images/photos/collections/MTLSummer2020/1.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/2.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/3.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/4.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/5.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/6.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/7.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/8.jpeg",
-    width:4,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/9.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/10.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/12.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/13.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/14.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/15.jpeg",
-    width:2,
-    height:3
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/16.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/17.jpeg",
-    width:3,
-    height:2
-  },
-  {
-    src: "/images/photos/collections/MTLSummer2020/18.jpeg",
-    width:3,
-    height:2
-  }
+    {
+      src: "/images/photos/collections/MTLSummer2020/1.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/2.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/3.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/4.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/5.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/6.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/7.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/8.jpeg",
+      width:4,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/9.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/10.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/12.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/13.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/14.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/15.jpeg",
+      width:2,
+      height:3
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/16.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/17.jpeg",
+      width:3,
+      height:2
+    },
+    {
+      src: "/images/photos/collections/MTLSummer2020/18.jpeg",
+      width:3,
+      height:2
+    }
   ];
 
   return(

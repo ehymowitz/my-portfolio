@@ -19,13 +19,13 @@ export default function Photography() {
           link="concert-photos"
           cover="/images/photos/covers/Concerts.jpeg"
           title="Concert Photography"
-          camera="Nikon D300"
+          camera="Nikon D7000"
         >
         </PhotoCover>
         <PhotoCover
           link="montreal-winter2020"
           cover="/images/photos/covers/MTLWinter2020.jpeg"
-          title="Montreal Winter 2020"
+          title="Montreal Winter/ Spring 2020"
           camera="Nikon D300, Film"
         >
         </PhotoCover>
@@ -40,7 +40,7 @@ export default function Photography() {
           link="belize2019"
           cover="/images/photos/covers/Belize2019.jpeg"
           title="Belize 2019"
-          camera="Nikon D300, Film"
+          camera="Film, Cell Phone"
         >
         </PhotoCover>
       </div>
