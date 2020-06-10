@@ -17,3 +17,16 @@
     margin-top: 10px
   }
 }
+
+.gallery {
+  padding: 150px;
+  img {
+    object-fit: cover;
+  }
+}
+
+.fullscreen {
+  path {
+    color:$background;
+  }
+}
