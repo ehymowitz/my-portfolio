@@ -19,7 +19,8 @@ export default function Home() {
       </Projects>
       <Music>
       </Music>
-      <Photography>
+      <Photography
+        heading = "Photos I've Taken">
       </Photography>
     </Layout>
   )

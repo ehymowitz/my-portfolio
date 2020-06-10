@@ -1,12 +1,11 @@
 import React from "react"
 
 export default function Project(props) {
-  const url = props.link
   const classes = "project-card " + props.orient
   const api = "API: " + props.api
   return (
     <div className={classes}>
-        <a href={props.link} target="_blank">
+        <a href={props.link} target="_blank" rel="noreferrer">
           <img src= {props.image} alt={props.title}/>
         </a>
         <div className="project-text">

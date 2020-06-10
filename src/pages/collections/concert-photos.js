@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react"
 import Layout from "../../components/fixed/layout"
+import Photography from "../photography"
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -20,77 +21,77 @@ export default function PhotoCover(props) {
 
   const photos = [
     {
-      src: "/images/photos/collections/Concerts/1.jpeg",
+      src: "/images/photos/collections/concerts/1.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/2.jpeg",
+      src: "/images/photos/collections/concerts/2.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/3.jpeg",
+      src: "/images/photos/collections/concerts/3.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/4.jpeg",
+      src: "/images/photos/collections/concerts/4.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/5.jpeg",
+      src: "/images/photos/collections/concerts/5.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/6.jpeg",
+      src: "/images/photos/collections/concerts/6.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/7.jpeg",
+      src: "/images/photos/collections/concerts/7.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/8.jpeg",
+      src: "/images/photos/collections/concerts/8.jpeg",
       width:4,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/9.jpeg",
+      src: "/images/photos/collections/concerts/9.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/10.jpeg",
+      src: "/images/photos/collections/concerts/10.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/12.jpeg",
+      src: "/images/photos/collections/concerts/12.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/13.jpeg",
+      src: "/images/photos/collections/concerts/13.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/14.jpeg",
+      src: "/images/photos/collections/concerts/14.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Concerts/15.jpeg",
+      src: "/images/photos/collections/concerts/15.jpeg",
       width:2,
       height:3
     },
     {
-      src: "/images/photos/collections/Concerts/16.jpeg",
+      src: "/images/photos/collections/concerts/16.jpeg",
       width:3,
       height:2
     }
@@ -114,6 +115,9 @@ export default function PhotoCover(props) {
             </Modal>
           ) : null}
         </ModalGateway>
+        <Photography
+          heading="Other Collections">
+        </Photography>
       </div>
     </Layout>
   )

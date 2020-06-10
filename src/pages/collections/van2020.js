@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react"
 import Layout from "../../components/fixed/layout"
+import Photography from "../photography"
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -20,42 +21,42 @@ export default function PhotoCover(props) {
 
   const photos = [
     {
-      src: "/images/photos/collections/Van2020/1.jpeg",
+      src: "/images/photos/collections/van2020/1.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Van2020/2.jpeg",
+      src: "/images/photos/collections/van2020/2.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Van2020/3.jpeg",
+      src: "/images/photos/collections/van2020/3.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Van2020/4.jpeg",
+      src: "/images/photos/collections/van2020/4.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Van2020/5.jpeg",
+      src: "/images/photos/collections/van2020/5.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Van2020/6.jpeg",
+      src: "/images/photos/collections/van2020/6.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Van2020/7.jpeg",
+      src: "/images/photos/collections/van2020/7.jpeg",
       width:3,
       height:2
     },
     {
-      src: "/images/photos/collections/Van2020/8.jpeg",
+      src: "/images/photos/collections/van2020/8.jpeg",
       width:3,
       height:4
     }
@@ -79,6 +80,9 @@ export default function PhotoCover(props) {
             </Modal>
           ) : null}
         </ModalGateway>
+        <Photography
+          heading="Other Collections">
+        </Photography>
       </div>
     </Layout>
   )

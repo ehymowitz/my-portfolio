@@ -8,7 +8,7 @@ export default function Carousel(props) {
   const background = props.image
   return(
     <div className="carousel-card">
-      <a href= {props.link} target="_blank">
+      <a href= {props.link} target="_blank" rel="noreferrer">
               <div className="icon">
           {icon === "code" && <BsCodeSlash/> }
           {icon === "music" && <GiFClef/> }

@@ -1,10 +1,9 @@
 import React from "react"
 
 export default function MusicCard(props) {
-  const classes = "music-card "
   return(
-    <div className={classes}>
-      <iframe src={props.link} frameborder="0"></iframe>
+    <div className="music-card">
+      <iframe src={props.link} frameBorder="0"></iframe>
       <div className="music-text">
         <h2>
           {props.title}
