@@ -1,29 +1,58 @@
 .hello-text {
   top: 175px;
-  width: 60vw;
+  width: 600px;
   margin: 0 auto;
   position: relative;
-  right: 5vw;
+  right: 200px;
 }
 
 .recent-projects {
   top: 325px;
   position: relative;
   margin: auto;
-  width: 80vw;
+  width: 1200px;
 
   h3 {
     position: relative;
-    left: 7vw;
+    left: 100px;
     bottom: 20px;
   }
 
   ul {
-    height: 180px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     position: relative;
+  }
+}
+
+@media only screen and (max-width: $Laptops) {
+  .hello-text {
+    right: 0px;
+  }
+
+  .recent-projects {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: $Tablets) {
+  .hello-text {
+    right: 20px;
+  }
+
+  .recent-projects {
+    width: 350px;
+    top: 240px;
+
+    h3 {
+      left: 0px;
+    }
+
+    ul {
+
+    }
   }
 }

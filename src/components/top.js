@@ -1,6 +1,6 @@
 import React from "react"
-import Carousel from "../components/cards/carousel"
-import Layout from "../components/fixed/layout"
+import Carousel from "./cards/carousel"
+import Layout from "./fixed/layout"
 
 export default function Top() {
   return (

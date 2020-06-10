@@ -28,16 +28,5 @@ ul {
 }
 
 div, svg, li {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.static-object > * {
-  z-index: 1;
-}
-
-.page-section {
-  min-height: 700px;
-  position: relative;
-  z-index: 0;
-  margin-bottom: 50px;
+  background-color: rgba(0,0,0,0);
 }

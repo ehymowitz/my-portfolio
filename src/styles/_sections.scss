@@ -1,0 +1,16 @@
+.heading {
+  top: 100px;
+  position: relative;
+  margin-left: 120px;
+}
+
+.static-object > * {
+  z-index: 1;
+}
+
+.page-section {
+  min-height: 680px;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 50px;
+}

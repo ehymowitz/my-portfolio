@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/fixed/layout"
-import Top from "./top"
-import Projects from "./projects"
-import Music from "./music"
-import Photography from "./photography"
+import Top from "../components/top"
+import Projects from "../components/projects"
+import Music from "../components/music"
+import Photography from "../components/photography"
+import Fixed from "../components/fixed/fixed"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
@@ -13,6 +14,8 @@ if (typeof window !== "undefined") {
 export default function Home() {
   return (
     <Layout>
+      <Fixed>
+      </Fixed>
       <Top>
       </Top>
       <Projects>

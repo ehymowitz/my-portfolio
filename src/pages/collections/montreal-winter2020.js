@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from "react"
 import Layout from "../../components/fixed/layout"
-import Photography from "../photography"
+import Photography from "../../components/photography"
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-
+import Fixed from "../../components/fixed/fixed"
 
 export default function PhotoCollection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -119,6 +119,8 @@ export default function PhotoCollection() {
 
   return(
     <Layout>
+    <Fixed>
+    </Fixed>
       <div className="gallery">
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>

@@ -1,6 +1,6 @@
 import React from "react"
-import PhotoCover from "../components/cards/photo-cover"
-import Layout from "../components/fixed/layout"
+import PhotoCover from "./cards/photo-cover"
+import Layout from "./fixed/layout"
 
 export default function Photography({heading}) {
   return (
