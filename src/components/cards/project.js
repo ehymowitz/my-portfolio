@@ -1,25 +1,25 @@
 import React from "react"
 
-export default function Project(props) {
-  const classes = "project-card " + props.orient
-  const api = "API: " + props.api
+export default function Project({orient, link, title, desc, stack, api, image}) {
+  const classes = "project-card " + orient
+  const usedapi = "API: " + api
   return (
     <div className={classes}>
-        <a href={props.link} target="_blank" rel="noreferrer">
-          <img src= {props.image} alt={props.title}/>
+        <a href={link} target="_blank" rel="noreferrer">
+          <img src= {image} alt={title}/>
         </a>
         <div className="project-text">
           <h2>
-            {props.title}
+            {title}
           </h2>
           <p>
-            {props.desc}
+            {desc}
           </p>
           <p>
-            Stack: {props.stack}
+            Stack: {stack}
           </p>
           <p>
-            {props.api && api}
+            {api && usedapi}
           </p>
         </div>
     </div>

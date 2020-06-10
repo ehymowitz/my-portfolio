@@ -2,12 +2,12 @@ import React from "react"
 import PhotoCover from "../components/cards/photo-cover"
 import Layout from "../components/fixed/layout"
 
-export default function Photography(props) {
+export default function Photography({heading}) {
   return (
     <Layout>
       <div className='page-section' id='photography'>
         <div className="heading">
-          <h1>{props.heading}</h1>
+          <h1>{heading}</h1>
         </div>
         <div className="photo-collections">
           <PhotoCover

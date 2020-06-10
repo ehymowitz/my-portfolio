@@ -3,24 +3,22 @@ import { GiFClef } from "react-icons/gi";
 import { BsCodeSlash } from "react-icons/bs"
 import { RiCamera3Line } from "react-icons/ri"
 
-export default function Carousel(props) {
-  const icon = props.type
-  const background = props.image
+export default function Carousel({title, desc, type, image, link}) {
   return(
     <div className="carousel-card">
-      <a href= {props.link} target="_blank" rel="noreferrer">
+      <a href= {link} target="_blank" rel="noreferrer">
               <div className="icon">
-          {icon === "code" && <BsCodeSlash/> }
-          {icon === "music" && <GiFClef/> }
-          {icon === "photo" && <RiCamera3Line/> }
+          {type === "code" && <BsCodeSlash/> }
+          {type === "music" && <GiFClef/> }
+          {type === "photo" && <RiCamera3Line/> }
         </div>
         <div
           className="image"
-          style = {{ backgroundImage: `url(${background})` }}>
+          style = {{ backgroundImage: `url(${image})` }}>
         </div>
         <div className="carousel-text">
-          <p>{props.title}</p>
-          <small>{props.desc}</small>
+          <p>{title}</p>
+          <small>{desc}</small>
         </div></a>
     </div>
   )

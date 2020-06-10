@@ -1,15 +1,15 @@
 import React from "react"
 
-export default function MusicCard(props) {
+export default function MusicCard({link, title, band}) {
   return(
     <div className="music-card">
-      <iframe src={props.link} frameBorder="0"></iframe>
+      <iframe src={link} frameBorder="0" title={title}></iframe>
       <div className="music-text">
         <h2>
-          {props.title}
+          {title}
         </h2>
         <h3>
-          {props.band}
+          {band}
         </h3>
       </div>
     </div>

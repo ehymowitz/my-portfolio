@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 export default function TopNav() {
   return (
@@ -7,17 +8,17 @@ export default function TopNav() {
         EH
       </a>
       <ul>
-        <a className= 'topnav-link' href={'/#projects'}>
+        <Link className= 'topnav-link' to='/#projects'>
           <h2>Projects</h2>
-        </a>
+        </Link>
         <h2>&#124;</h2>
-        <a className= 'topnav-link' href={'/#music'}>
+        <Link className= 'topnav-link' to='/#music'>
           <h2>Music</h2>
-        </a>
+        </Link>
         <h2>&#124;</h2>
-        <a className= 'topnav-link' href={'/#photography'}>
+        <Link className= 'topnav-link' to='/#photography'>
           <h2>Photography</h2>
-        </a>
+        </Link>
       </ul>
     </div>
   )

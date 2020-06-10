@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-export default function PhotoCover(props) {
-  const link = "../../collections/" + props.link
+export default function PhotoCover({ link, cover, title, camera }) {
+  const photolink = "../../collections/" + link
   return(
-    <Link className="collection-cover" to={link}>
-      <img src={props.cover} alt={props.title}/>
+    <Link className="collection-cover" to={photolink}>
+      <img src={cover} alt={title}/>
       <div className="collection-text">
-        <h3>{props.title}</h3>
-        <p>{props.camera}</p>
+        <h3>{title}</h3>
+        <p>{camera}</p>
       </div>
     </Link>
   )
