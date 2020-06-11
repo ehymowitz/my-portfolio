@@ -1,6 +1,5 @@
 .heading {
-  top: 100px;
-  position: relative;
+  margin-top: 100px;
   margin-left: 120px;
 }
 
@@ -9,33 +8,17 @@
 }
 
 .page-section {
-  min-height: 90vh;
+  min-height: 100vh;
   position: relative;
   padding: 20px;
   margin-bottom: 50px;
-}
-
-#music {
-  min-height: 80vh;
 }
 
 @media only screen and (max-width: $Tablets) {
 .page-section {
-  min-height: 600px;
-  position: relative;
-  padding: 20px;
-  margin-bottom: 50px;
 }
   .heading {
-    margin: 0px auto;
     text-align: center;
-  }
-
-  #music {
-    margin-bottom: 0px;
-  }
-
-  #photography {
-    margin-bottom: 100px;
+    margin-left: 0px;
   }
 }

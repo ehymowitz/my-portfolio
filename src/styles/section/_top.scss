@@ -1,63 +1,23 @@
 .hello-text {
-  top: 175px;
-  width: 600px;
-  margin: 0 auto;
-  position: relative;
-  right: 200px;
+  margin-top: 12%;
+  margin-left: 12%;
 }
 
 .recent-projects {
-  top: 325px;
-  position: relative;
-  margin: auto;
-  width: 1200px;
+  margin: 7% auto;
+  max-width: 90%;
 
   h3 {
-    position: relative;
-    margin-left: 100px;
-    bottom: 20px;
+    margin-left: 10%;
+    margin-bottom: 1%;
   }
 
   ul {
-    height: auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-  }
-}
 
-@media only screen and (max-width: $Laptops) {
-  .hello-text {
-    right: 0px;
-  }
-
-  .recent-projects {
-    width: 800px;
-  }
-}
-
-@media only screen and (max-width: $Tablets) {
-  .hello-text {
-    top: 70px;
-    right: 0px;
-    text-align: center;
-    width: 450px;
-  }
-
-  .recent-projects {
-    width: 80vw;
-    height: auto;
-    top: 140px;
-
-    h3 {
-      left: -40px;
-      bottom: 0px;
-    }
-
-    ul {
-      flex-direction: column;
+    li {
+      width: 24%;
     }
   }
 }
