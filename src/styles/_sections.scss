@@ -9,10 +9,14 @@
 }
 
 .page-section {
-  min-height: 680px;
+  min-height: 90vh;
   position: relative;
   padding: 20px;
   margin-bottom: 50px;
+}
+
+#music {
+  min-height: 80vh;
 }
 
 @media only screen and (max-width: $Tablets) {
@@ -29,5 +33,9 @@
 
   #music {
     margin-bottom: 0px;
+  }
+
+  #photography {
+    margin-bottom: 100px;
   }
 }
