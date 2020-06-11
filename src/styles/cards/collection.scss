@@ -30,3 +30,9 @@
     color:$background;
   }
 }
+
+@media only screen and (max-width: $Tablets) {
+  .collection-cover {
+    height: 300px;
+  }
+}

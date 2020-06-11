@@ -5,3 +5,10 @@
   margin: 20px auto;
   overflow: auto;
 }
+
+@media only screen and (max-width: $Laptops) {
+  .project-container {
+    top: 100px;
+    width: 90vw;
+  }
+}

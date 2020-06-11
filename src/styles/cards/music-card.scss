@@ -23,3 +23,11 @@
   }
 }
 
+@media only screen and (max-width: $Tablets) {
+  iframe {
+    width: 420px !important;
+    height: 236px !important;
+  }
+}
+
+

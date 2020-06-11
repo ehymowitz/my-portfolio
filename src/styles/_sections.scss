@@ -14,3 +14,20 @@
   padding: 20px;
   margin-bottom: 50px;
 }
+
+@media only screen and (max-width: $Tablets) {
+.page-section {
+  min-height: 600px;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+  .heading {
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #music {
+    margin-bottom: 0px;
+  }
+}

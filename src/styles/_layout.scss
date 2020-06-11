@@ -17,7 +17,7 @@ p, a, small {
   font-family: Asap;
 }
 
-a{
+a {
   text-decoration: none;
   background-color: rgba(0,0,0,0);
 }
@@ -29,4 +29,14 @@ ul {
 
 div, svg, li {
   background-color: rgba(0,0,0,0);
+}
+
+@media only screen and (max-width: $Tablets) {
+  h1 {
+    font-size: 27px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }

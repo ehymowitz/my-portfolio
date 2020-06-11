@@ -7,7 +7,7 @@
 }
 
 .project-card{
-  margin: 20px 0;
+  margin: 20px 10px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
@@ -36,3 +36,40 @@
   }
 }
 
+@media only screen and (max-width: $Laptops) {
+  .project-card {
+    .project-text {
+      margin: 0 20px;
+    }
+
+    img, a {
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: $Tablets) {
+  .project-card {
+    flex-flow: column !important;
+    height: auto;
+    justify-contents: center;
+    margin-bottom: 20px;
+
+    .project-text {
+      border-top: 1px solid black;
+      margin: 10px 30px;
+
+      h2 {
+        margin-bottom: 5px;
+      }
+    }
+
+    img, a {
+      display:flex;
+      height: 225px;
+      object-fit: cover;
+      margin: 0px auto;
+    }
+  }
+}
