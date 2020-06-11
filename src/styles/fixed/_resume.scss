@@ -8,3 +8,9 @@
     font-weight: 900;
   }
 }
+
+@media only screen and (max-width: $Phones) {
+  .resume {
+    left: 25px;
+  }
+}

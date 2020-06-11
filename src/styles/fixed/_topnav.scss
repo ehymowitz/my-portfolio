@@ -38,3 +38,18 @@
   }
 }
 
+@media only screen and (max-width: $Phones) {
+  .topnav-container {
+    margin-top: 10px;
+    width: 100%;
+    .top-link {
+      left: 10px;
+    }
+
+    ul {
+      width: 75%;
+      padding-right: 3%;
+      padding-top: 3.5%;
+    }
+  }
+}
