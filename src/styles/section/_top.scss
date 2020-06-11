@@ -40,19 +40,23 @@
 
 @media only screen and (max-width: $Tablets) {
   .hello-text {
-    right: 20px;
+    top: 70px;
+    right: 0px;
+    text-align: center;
+    width: 450px;
   }
 
   .recent-projects {
-    width: 350px;
-    top: 240px;
+    width: 450px;
+    height: auto;
+    top: 140px;
 
     h3 {
-      left: 0px;
+      left: 20px;
     }
 
     ul {
-
+      flex-direction: column;
     }
   }
 }

@@ -6,12 +6,12 @@ import { RiCamera3Line } from "react-icons/ri"
 export default function Carousel({title, desc, type, image, link}) {
   return(
     <div className="carousel-card">
+      <div className="icon">
+        {type === "code" && <BsCodeSlash/> }
+        {type === "music" && <GiFClef/> }
+        {type === "photo" && <RiCamera3Line/> }
+      </div>
       <a href= {link} target="_blank" rel="noreferrer">
-              <div className="icon">
-          {type === "code" && <BsCodeSlash/> }
-          {type === "music" && <GiFClef/> }
-          {type === "photo" && <RiCamera3Line/> }
-        </div>
         <div
           className="image"
           style = {{ backgroundImage: `url(${image})` }}>

@@ -1,13 +1,12 @@
 .topnav-container {
   width: 100vw;
   position: fixed;
-  right: 0;
 
   .top-link {
     padding: 3%;
     float: left;
     position: relative;
-    left:45px;
+    left: 45px;
     font-size: 24px;
     font-family: 'M PLUS Rounded 1c';
     font-weight: 900;
@@ -27,4 +26,15 @@
   }
 }
 
+@media only screen and (max-width: $Tablets) {
+  .topnav-container {
+    .top-link {
+      left: 10px;
+    }
+
+    ul {
+      width: 75%;
+    }
+  }
+}
 
