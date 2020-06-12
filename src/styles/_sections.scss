@@ -1,6 +1,6 @@
 .heading {
-  margin-top: 100px;
-  margin-left: 120px;
+  margin-top: 8%;
+  margin-left: 12%;
 }
 
 .static-object > * {
@@ -9,16 +9,24 @@
 
 .page-section {
   min-height: 100vh;
-  position: relative;
   padding: 20px;
   padding-bottom: 0px;
 }
 
-@media only screen and (max-width: $Tablets) {
-.page-section {
-}
+#photography {
   .heading {
-    text-align: center;
-    margin-left: 0px;
+    margin-top: 7%;
+  }
+}
+
+@media only screen and (max-width: $Laptops) {
+  .heading {
+    margin-top: 10% !important;
+  }
+}
+
+@media only screen and (max-width: $Tablets) {
+  .heading {
+    margin-top: 18% !important;
   }
 }

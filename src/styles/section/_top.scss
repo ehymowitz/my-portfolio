@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: $Laptops) {
   .recent-projects {
-    margin: 10% auto;
+    margin: 15% auto;
     max-width: 100%;
     ul {
       li {
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: $Tablets) {
   .recent-projects {
-    margin: 12% auto;
+    margin: 10% auto;
     max-width: 100%;
     ul {
       flex-direction: column;

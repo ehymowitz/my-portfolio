@@ -1,6 +1,5 @@
 .music-card{
   margin: 0 15px;
-  justify-content: space-between;
 
   .music-text {
     border-top: 1px solid black;
@@ -24,9 +23,11 @@
 }
 
 @media only screen and (max-width: $Tablets) {
-  iframe {
-    width: 420px !important;
-    height: 236px !important;
+  .music-card {
+    iframe {
+      max-width: 420px !important;
+      max-height: 236px !important;
+    }
   }
 }
 
