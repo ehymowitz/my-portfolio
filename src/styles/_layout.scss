@@ -1,3 +1,7 @@
+html {
+  scroll-snap-type: y proximity;
+}
+
 body {
   background-color: $background;
 }

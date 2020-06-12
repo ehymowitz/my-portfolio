@@ -1,5 +1,6 @@
 .photo-collections {
-  margin: 75px auto 75px auto;
+  scroll-snap-type: x mandatory;
+  margin: 7% auto 75px auto;
   display: flex;
   max-width: 90vw;
   overflow: scroll;
@@ -7,6 +8,6 @@
 
 @media only screen and (max-width: $Tablets) {
   .photo-collections {
-    margin: 100px auto 75px auto;
+    margin: 12% auto 75px auto;
   }
 }

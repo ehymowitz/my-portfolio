@@ -8,8 +8,9 @@
 }
 
 .page-section {
+  scroll-snap-align: start;
   min-height: 100vh;
-  padding: 20px;
+  padding: 5px;
   padding-bottom: 0px;
 }
 

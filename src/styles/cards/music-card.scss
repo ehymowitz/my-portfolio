@@ -1,5 +1,6 @@
 .music-card{
   margin: 0 15px;
+  scroll-snap-align: start;
 
   .music-text {
     border-top: 1px solid black;
