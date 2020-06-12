@@ -2,7 +2,7 @@
   margin: 7% auto 0px auto;
   display: flex;
   max-width: 90vw;
-  overflow: scroll;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
 

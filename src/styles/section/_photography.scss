@@ -3,7 +3,7 @@
   margin: 7% auto 75px auto;
   display: flex;
   max-width: 90vw;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 @media only screen and (max-width: $Tablets) {
