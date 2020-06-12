@@ -32,4 +32,22 @@
   }
 }
 
+@media only screen and (max-width: $Phones) {
+  .music-card {
+    iframe {
+      max-width: 250px !important;
+      max-height: 140px !important;
+    }
+    .music-text {
+      h2 {
+        margin-bottom: 0px;
+      }
+
+      h3 {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
 

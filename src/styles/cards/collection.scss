@@ -23,12 +23,23 @@
   img {
     object-fit: cover;
   }
+
+  #photography {
+    scroll-snap-align:none;
+    min-height: auto;
+  }
+}
+
+.fullscreen {
+  path {
+    color:$background;
+  }
 }
 
 @media only screen and (max-width: $Laptops) {
   .gallery {
     padding: 110px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 
   .collection-cover {
@@ -39,7 +50,7 @@
 @media only screen and (max-width: $Tablets) {
   .gallery {
     padding: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 
   .collection-cover {
@@ -47,8 +58,10 @@
   }
 }
 
-.fullscreen {
-  path {
-    color:$background;
+@media only screen and (max-width: $Phones) {
+  .gallery {
+    padding: 36px;
+    padding-top: 70px;
   }
 }
+
