@@ -4,8 +4,25 @@ import Photography from "../../components/photography"
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Fixed from "../../components/fixed/fixed"
+import { graphql } from "gatsby"
 
-export default function PhotoCollection() {
+export const query = graphql`
+    query MyQuery {
+    allFile(filter: {relativePath: {regex: "/photos\\/collections\\/van/"}}, sort: {fields: modifiedTime, order: DESC}) {
+      nodes {
+        relativePath
+        childImageSharp {
+          original {
+            src
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+`
+export default function PhotoCollection({ data }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -19,48 +36,13 @@ export default function PhotoCollection() {
     setViewerIsOpen(false);
   };
 
-  const photos = [
-    {
-      src: "/images/photos/collections/van2020/1.jpeg",
-      width:3,
-      height:2
-    },
-    {
-      src: "/images/photos/collections/van2020/2.jpeg",
-      width:3,
-      height:2
-    },
-    {
-      src: "/images/photos/collections/van2020/3.jpeg",
-      width:3,
-      height:2
-    },
-    {
-      src: "/images/photos/collections/van2020/4.jpeg",
-      width:3,
-      height:2
-    },
-    {
-      src: "/images/photos/collections/van2020/5.jpeg",
-      width:3,
-      height:2
-    },
-    {
-      src: "/images/photos/collections/van2020/6.jpeg",
-      width:3,
-      height:2
-    },
-    {
-      src: "/images/photos/collections/van2020/7.jpeg",
-      width:3,
-      height:2
-    },
-    {
-      src: "/images/photos/collections/van2020/8.jpeg",
-      width:3,
-      height:4
+  const photos = data.allFile.nodes.map ( p => {
+    return {
+      src: p.childImageSharp.original.src,
+      height: p.childImageSharp.original.height,
+      width: p.childImageSharp.original.width
     }
-  ];
+  })
 
   return(
     <Layout>
