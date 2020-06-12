@@ -46,8 +46,6 @@ export default function PhotoCollection({ data }) {
     }
   })
 
-  console.log(photos)
-
   return(
     <Layout>
     <Fixed>
