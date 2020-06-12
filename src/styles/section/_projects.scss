@@ -1,14 +1,10 @@
 .project-container {
-  position: relative;
-  top: 150px;
-  width: 1050px;
-  margin: 20px auto;
-  overflow: auto;
+  margin: 75px auto 0px auto;
+  max-width: 80%;
 }
 
 @media only screen and (max-width: $Laptops) {
   .project-container {
-    top: 100px;
-    width: 90vw;
+    max-width: 90%;
   }
 }
