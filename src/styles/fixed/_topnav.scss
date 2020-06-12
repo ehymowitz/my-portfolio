@@ -1,6 +1,7 @@
 .topnav-container {
   position: fixed;
   width: 100vw;
+  background-image: linear-gradient($background 80%, rgba(0,0,0,0));
 
   .top-link {
     padding: 3%;
