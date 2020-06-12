@@ -45,12 +45,17 @@
     width: 100%;
     .top-link {
       left: 10px;
+      font-size: 1.25em;
     }
 
     ul {
       width: 75%;
       padding-right: 3%;
       padding-top: 3.5%;
+    }
+
+    a {
+    text-decoration: none;
     }
   }
 }

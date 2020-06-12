@@ -4,7 +4,7 @@
   box-shadow: $shadow;
   .icon {
     position: absolute;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 24px;
     padding: 6px 6px;
     text-align: center;
@@ -39,63 +39,72 @@
 @media only screen and (max-width: $Tablets) {
   .carousel-card  {
     height: 100px;
-    margin: 20px;
-    margin-top: 0px;
-
+    margin-bottom: 20px;
     .icon {
       top: -10px;
     }
 
     .carousel-text {
-      padding: 10px;
       text-align: center;
-      width: 40%;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    .image {
-      height: 100px;
-      width: 60%;
+    a {
+      display: flex;
+      flex-direction: row;
+
+      .image {
+        height: 100px;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Phones) {
+  .carousel-card  {
+    height: 100%;
+    margin-bottom: 10px;
+
+    .icon {
+      top: -10px;
+      font-size: 1em;
+      height: 20px;
+      width: 20px;
+      padding: 4px 4px;
+    }
+
+    .carousel-text {
+      height: 100%;
+      padding: 0px;
+      text-align: center;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+      margin: 0px 0;
+      }
+
+      small {
+      margin-left: 0px;
+      }
     }
 
     a {
       display: flex;
       flex-direction: row;
+      height: 100%;
+
+      .image {
+        height: 100%;
+        width: 50%;
+      }
     }
   }
 }
-
-// @media only screen and (max-width: $Phones) {
-//   .carousel-card  {
-//     height: 100px;
-//     margin: 20px;
-//     margin-top: 0px;
-
-//     .icon {
-//       top: -10px;
-//     }
-
-//     .carousel-text {
-//       padding: 10px;
-//       text-align: center;
-//       width: 40%;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//     }
-
-//     .image {
-//       height: 100px;
-//       width: 60%;
-//     }
-
-//     a {
-//       display: flex;
-//       flex-direction: row;
-//     }
-//   }
-// }
 
 

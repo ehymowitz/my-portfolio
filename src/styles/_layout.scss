@@ -41,6 +41,20 @@ div, svg, li {
   }
 
   h2 {
-    font-size: 1.5;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: $Phones) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p, small {
+    font-size: 0.75em;
   }
 }
