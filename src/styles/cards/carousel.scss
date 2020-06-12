@@ -35,7 +35,39 @@
   }
 }
 
-// @media only screen and (max-width: $Tablets) {
+
+@media only screen and (max-width: $Tablets) {
+  .carousel-card  {
+    height: 100px;
+    margin: 20px;
+    margin-top: 0px;
+
+    .icon {
+      top: -10px;
+    }
+
+    .carousel-text {
+      padding: 10px;
+      text-align: center;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .image {
+      height: 100px;
+      width: 60%;
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+// @media only screen and (max-width: $Phones) {
 //   .carousel-card  {
 //     height: 100px;
 //     margin: 20px;

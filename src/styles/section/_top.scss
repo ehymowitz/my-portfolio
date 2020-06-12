@@ -4,8 +4,8 @@
 }
 
 .recent-projects {
-  margin: 7% auto;
-  max-width: 90%;
+  margin: 8% auto;
+  max-width: 95%;
 
   h3 {
     margin-left: 10%;
@@ -18,6 +18,32 @@
 
     li {
       width: 24%;
+    }
+  }
+}
+
+@media only screen and (max-width: $Laptops) {
+  .recent-projects {
+    margin: 10% auto;
+    max-width: 100%;
+    ul {
+      li {
+        width: 29%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Tablets) {
+  .recent-projects {
+    margin: 12% auto;
+    max-width: 100%;
+    ul {
+      flex-direction: column;
+      align-items: center;
+      li {
+        width: 80%;
+      }
     }
   }
 }
