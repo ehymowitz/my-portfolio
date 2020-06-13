@@ -8,7 +8,7 @@ import { graphql } from "gatsby"
 
 export const query = graphql`
     query MyQuery {
-    allFile(filter: {relativePath: {regex: "/photos\\/collections\\/van/"}}, sort: {fields: modifiedTime, order: DESC}) {
+    allFile(filter: {relativePath: {regex: "/photos\\/collections\\/van/"}}, sort: {fields: relativePath, order: ASC}) {
       nodes {
         relativePath
         childImageSharp {

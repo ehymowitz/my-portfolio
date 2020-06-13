@@ -9,7 +9,7 @@ import { graphql } from "gatsby"
 
 export const query = graphql`
   query {
-    allFile(filter: {relativePath: {regex: "/photos\\/collections\\/belize/"}}, sort: {fields: modifiedTime, order: ASC}) {
+    allFile(filter: {relativePath: {regex: "/photos\\/collections\\/belize/"}}, sort: {fields: relativePath, order: ASC}) {
       nodes {
         relativePath
         childImageSharp {
