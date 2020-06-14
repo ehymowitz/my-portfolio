@@ -37,4 +37,11 @@
     text-align: center;
     margin: 25% auto 0 auto !important;
   }
+
+  .page-section {
+    scroll-snap-align: none;
+    min-height: 100vh;
+    padding: 5px;
+    padding-bottom: 0px;
+  }
 }
