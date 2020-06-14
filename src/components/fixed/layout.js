@@ -6,6 +6,7 @@ export default function Layout({ children }) {
     <>
       <Helmet>
         <title>Elie Hymowitz</title>
+        <meta name="description" content= "Elie Hymowitz's Web Portfolio. I'm a web developer and musician, and I take photos too."/>
       </Helmet>
       {children}
     </>
