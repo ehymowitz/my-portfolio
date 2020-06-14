@@ -11,3 +11,9 @@
     margin: 12% auto 75px auto;
   }
 }
+
+@media only screen and (max-width: $Phones) {
+  .photo-collections {
+    margin: 25% auto 75px auto;
+  }
+}
