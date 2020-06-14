@@ -29,8 +29,10 @@ export default function PhotoCollection({ data }) {
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
+    if (window.innerWidth > 499) {
+      setCurrentImage(index);
+      setViewerIsOpen(true);
+    }
   }, []);
 
   const closeLightbox = () => {
