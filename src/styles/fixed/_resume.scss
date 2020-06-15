@@ -15,3 +15,12 @@
     bottom: 10px;
   }
 }
+
+@media only screen and (min-width: $Laptops-big) {
+  .resume {
+    a {
+      font-size: 2em;
+    }
+  }
+}
+

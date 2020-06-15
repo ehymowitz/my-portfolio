@@ -67,3 +67,21 @@ div, svg, li {
     font-size: 0.75em;
   }
 }
+
+@media only screen and (min-width: $Laptops-big) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p, small {
+    font-size: 1.5em;
+  }
+}

@@ -17,3 +17,9 @@
     margin: 25% auto 75px auto;
   }
 }
+
+@media only screen and (min-width: $Laptops-big) {
+  .photo-collections {
+    margin: 4% auto 75px auto;
+  }
+}

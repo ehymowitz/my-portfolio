@@ -25,3 +25,11 @@
     }
   }
 }
+
+@media only screen and (min-width: $Laptops-big) {
+  .social-links {
+    a {
+      font-size: 2em;
+    }
+  }
+}

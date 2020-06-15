@@ -107,4 +107,11 @@
   }
 }
 
+@media only screen and (min-width: $Laptops-big) {
+  .carousel-card  {
+    height: 350px;
+  }
+}
+
+
 
