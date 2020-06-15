@@ -15,11 +15,21 @@
   }
 
   ul {
-    padding: 3%;
+    padding: 4%;
     float: right;
     width: 60%;
     display: flex;
     justify-content: space-evenly;
+
+    a {
+      width: 30%;
+      text-align: center;
+    }
+
+    #middle-link {
+      border-left: 3px solid black;
+      border-right: 3px solid black;
+    }
   }
 
   a {

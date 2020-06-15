@@ -11,13 +11,11 @@ export default function TopNav() {
         <Link className= 'topnav-link' to='/#projects'>
           <h2>Projects</h2>
         </Link>
-        <h2>&#124;</h2>
-        <Link className= 'topnav-link' to='/#music'>
+        <Link className= 'topnav-link' id='middle-link' to='/#music'>
           <h2>Music</h2>
         </Link>
-        <h2>&#124;</h2>
         <Link className= 'topnav-link' to='/#photography'>
-          <h2>Photography</h2>
+          <h2>Photo</h2>
         </Link>
       </ul>
     </div>
