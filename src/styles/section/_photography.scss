@@ -1,14 +1,20 @@
 .photo-collections {
   scroll-snap-type: x mandatory;
-  margin: 7% auto 75px auto;
+  margin: 4% auto 8% auto;
   display: flex;
   max-width: 90vw;
   overflow-x: scroll;
 }
 
+@media only screen and (max-width: $Laptops) {
+  .photo-collections {
+    margin: 60px auto 7% auto;
+  }
+}
+
 @media only screen and (max-width: $Tablets) {
   .photo-collections {
-    margin: 12% auto 75px auto;
+    margin: 5% auto 100px auto;
   }
 }
 
