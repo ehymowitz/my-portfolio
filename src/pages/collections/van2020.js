@@ -1,17 +1,26 @@
-import React, { useState, useCallback } from "react"
-import Layout from "../../components/fixed/layout"
-import Photography from "../../components/photography"
+import React, { useState, useCallback } from "react";
+import Layout from "../../components/fixed/layout";
+import Photography from "../../components/photography";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import Fixed from "../../components/fixed/fixed"
-import { graphql } from "gatsby"
+import Fixed from "../../components/fixed/fixed";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 
 export const query = graphql`
-    query MyQuery {
+  query {
     allFile(filter: {relativePath: {regex: "/photos\\/collections\\/van/"}}, sort: {fields: relativePath, order: ASC}) {
       nodes {
         relativePath
         childImageSharp {
+          fluid {
+            base64
+            tracedSVG
+            srcWebp
+            srcSetWebp
+            originalImg
+            originalName
+          }
           original {
             src
             height
@@ -22,6 +31,7 @@ export const query = graphql`
     }
   }
 `
+
 export default function PhotoCollection({ data }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);

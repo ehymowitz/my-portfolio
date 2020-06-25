@@ -1,10 +1,11 @@
-import React, { useState, useCallback } from "react"
-import Layout from "../../components/fixed/layout"
-import Photography from "../../components/photography"
+import React, { useState, useCallback } from "react";
+import Layout from "../../components/fixed/layout";
+import Photography from "../../components/photography";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import Fixed from "../../components/fixed/fixed"
-import { graphql } from "gatsby"
+import Fixed from "../../components/fixed/fixed";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 
 export const query = graphql`
   query {
@@ -12,6 +13,14 @@ export const query = graphql`
       nodes {
         relativePath
         childImageSharp {
+          fluid {
+            base64
+            tracedSVG
+            srcWebp
+            srcSetWebp
+            originalImg
+            originalName
+          }
           original {
             src
             height
@@ -41,17 +50,16 @@ export default function PhotoCollection({ data }) {
 
   const photos = data.allFile.nodes.map ( p => {
     return {
-      src: p.childImageSharp.original.src,
+      src: p.childImageSharp.fluid.originalImg,
       height: p.childImageSharp.original.height,
       width: p.childImageSharp.original.width
     }
   })
 
-
   return(
     <Layout>
-    <Fixed>
-    </Fixed>
+      <Fixed>
+      </Fixed>
       <div className="gallery">
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>
