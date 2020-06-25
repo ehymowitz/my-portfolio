@@ -50,7 +50,7 @@ export default function PhotoCollection({ data }) {
 
   const photos = data.allFile.nodes.map ( p => {
     return {
-      src: p.childImageSharp.original.src,
+      src: p.childImageSharp.fluid.originalImg,
       height: p.childImageSharp.original.height,
       width: p.childImageSharp.original.width
     }
