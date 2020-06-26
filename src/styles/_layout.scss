@@ -1,11 +1,5 @@
 body {
   background-color: $background;
-  opacity: 0;
-}
-
-.fade-in {
-  transition: opacity 0.7s;
-  opacity: 1;
 }
 
 * {
