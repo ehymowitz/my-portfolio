@@ -11,6 +11,12 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
 
+window.addEventListener('load', (event) => {
+  setTimeout(() => {
+    document.body.classList.add('fade-in')
+  }, 200)
+})
+
 export default function Home() {
   return (
     <Layout>
