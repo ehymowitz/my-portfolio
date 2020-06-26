@@ -5,7 +5,6 @@ import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Fixed from "../../components/fixed/fixed";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 
 export const query = graphql`
   query {

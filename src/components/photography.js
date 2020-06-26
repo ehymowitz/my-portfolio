@@ -6,10 +6,20 @@ export default function Photography({heading}) {
   return (
     <Layout>
       <div className='page-section' id='photography'>
-        <div className="heading">
+        <div className="heading"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <h1>{heading}</h1>
         </div>
-        <div className="photo-collections">
+        <div className="photo-collections"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <PhotoCover
             link="montreal-summer2020"
             cover="/images/photos/covers/MTLSummer2020.jpeg"

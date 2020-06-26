@@ -6,10 +6,20 @@ export default function Music() {
   return (
     <Layout>
       <div className='page-section' id='music'>
-        <div className="heading">
+        <div className="heading"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <h1>Music I've Played</h1>
         </div>
-        <div className="music-container">
+        <div className="music-container"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <MusicCard
             link="https://www.youtube.com/embed/D78yEbn_03I"
             title="OAP Live Online"

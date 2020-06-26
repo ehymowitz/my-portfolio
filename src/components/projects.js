@@ -6,7 +6,12 @@ export default function Projects() {
   return (
     <Layout>
       <div className='page-section' id='projects'>
-        <div className="heading">
+        <div className="heading"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <h1>Projects I've Developed</h1>
         </div>
         <div className="project-container">
@@ -17,7 +22,8 @@ export default function Projects() {
             desc="Mobile-first webapp for sharing food in local communities"
             stack="Ruby on Rails - Ruby, HTML, CSS, JS "
             api="Spoonacular for recipe generation"
-            image="/images/projects/DDF.png">
+            image="/images/projects/DDF.png"
+            >
           </Project>
           <Project
             orient="right"
