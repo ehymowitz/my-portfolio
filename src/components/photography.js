@@ -8,9 +8,8 @@ export default function Photography({heading}) {
       <div className='page-section' id='photography'>
         <div className="heading"
           data-sal="fade"
-          data-sal-delay="200"
           data-sal-easing="ease"
-          data-sal-duration="1000"
+          data-sal-duration="1500"
         >
           <h1>{heading}</h1>
         </div>
@@ -18,7 +17,7 @@ export default function Photography({heading}) {
           data-sal="fade"
           data-sal-delay="200"
           data-sal-easing="ease"
-          data-sal-duration="1000"
+          data-sal-duration="1500"
         >
           <PhotoCover
             link="montreal-summer2020"

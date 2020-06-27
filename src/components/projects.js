@@ -8,9 +8,8 @@ export default function Projects() {
       <div className='page-section' id='projects'>
         <div className="heading"
           data-sal="fade"
-          data-sal-delay="200"
           data-sal-easing="ease"
-          data-sal-duration="1000"
+          data-sal-duration="1500"
         >
           <h1>Projects I've Developed</h1>
         </div>

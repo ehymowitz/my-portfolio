@@ -6,9 +6,8 @@ export default function Project({orient, link, title, desc, stack, api, image}) 
   return (
     <div className={classes}
       data-sal="fade"
-      data-sal-delay="200"
       data-sal-easing="ease"
-      data-sal-duration="1000"
+      data-sal-duration="1500"
     >
       <a href={link} target="_blank" rel="noreferrer">
         <img src= {image} alt={title}/>

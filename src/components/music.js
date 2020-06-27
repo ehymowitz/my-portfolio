@@ -8,9 +8,8 @@ export default function Music() {
       <div className='page-section' id='music'>
         <div className="heading"
           data-sal="fade"
-          data-sal-delay="200"
           data-sal-easing="ease"
-          data-sal-duration="1000"
+          data-sal-duration="1500"
         >
           <h1>Music I've Played</h1>
         </div>
@@ -18,7 +17,7 @@ export default function Music() {
           data-sal="fade"
           data-sal-delay="200"
           data-sal-easing="ease"
-          data-sal-duration="1000"
+          data-sal-duration="1500"
         >
           <MusicCard
             link="https://www.youtube.com/embed/D78yEbn_03I"
