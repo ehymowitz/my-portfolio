@@ -19,11 +19,11 @@
   .imageContainer {
     height: 66%;
     overflow: hidden;
-  }
 
-  .image {
-    background-size: cover;
-    width: 100%;
+    .image {
+      min-width: 100%;
+      object-fit: cover;
+    }
   }
   .carousel-text {
     padding: 2px;
@@ -60,9 +60,14 @@
       display: flex;
       flex-direction: row;
 
+      .imageContainer {
+        min-width: 60%;
+      }
+
       .image {
         height: 100px;
-        width: 60%;
+        min-width: 60%;
+        margin: -3px;
       }
     }
   }
@@ -104,9 +109,14 @@
       flex-direction: row;
       height: 100%;
 
+      .imageContainer {
+        height: 100%;
+      }
+
       .image {
         height: 100%;
-        width: 50%;
+        min-width: 50%;
+        margin: 0px;
       }
     }
   }
@@ -115,6 +125,21 @@
 @media only screen and (min-width: $Laptops-big) {
   .carousel-card  {
     height: 350px;
+    .carousel-text {
+      text-align: center;
+      padding: 0;
+      padding-top: 1%;
+    }
+    .imageContainer {
+      min-height: 66%;
+      overflow: hidden;
+
+      .image {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 
