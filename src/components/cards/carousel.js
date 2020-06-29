@@ -12,14 +12,18 @@ export default function Carousel({title, desc, type, image, link}) {
         {type === "photo" && <RiCamera3Line/> }
       </div>
       <a href= {link} target="_blank" rel="noreferrer">
-        <div
-          className="image"
-          style = {{ backgroundImage: `url(${image})` }}>
+        <div className = "imageContainer">
+          <img
+            className="image"
+            alt = "Recent Project"
+            src = {image}
+          />
         </div>
         <div className="carousel-text">
           <p>{title}</p>
           <small>{desc}</small>
-        </div></a>
+        </div>
+      </a>
     </div>
   )
 }
