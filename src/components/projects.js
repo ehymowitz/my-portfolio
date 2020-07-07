@@ -1,6 +1,5 @@
 import React from "react"
 import Project from "../components/cards/project"
-import Layout from "../components/fixed/layout"
 
 export default function Projects() {
   return (

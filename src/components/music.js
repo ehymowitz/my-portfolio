@@ -1,6 +1,5 @@
 import React from "react"
 import MusicCard from "../components/cards/music-card"
-import Layout from "../components/fixed/layout"
 
 export default function Music() {
   return (

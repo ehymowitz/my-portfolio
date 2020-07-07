@@ -1,6 +1,5 @@
 import React from "react"
 import PhotoCover from "./cards/photo-cover"
-import Layout from "./fixed/layout"
 
 export default function Photography({heading}) {
   return (
