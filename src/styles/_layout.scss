@@ -31,6 +31,10 @@ div, svg, li {
   background-color: rgba(0,0,0,0);
 }
 
+.layout {
+  height: 100vh;
+}
+
 @media only screen and (max-width: $Tablets) {
   h1 {
     font-size: 2em;
