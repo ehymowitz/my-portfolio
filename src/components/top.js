@@ -14,11 +14,11 @@ export default function Top() {
         <ul className = 'projects-container'>
           <li>
             <Carousel
-              title="Don't Die Food"
-              desc="Mobile First Rails App"
+              title="Mezcal MTL"
+              desc="Lightweight Landing Page"
               type="code"
-              image='/images/recent/DDF.png'
-              link="http://www.dontdiefood.com/">
+              image='/images/recent/Mezcal.png'
+              link="http://mezcalmtl.ca/">
             </Carousel>
           </li>
           <li>

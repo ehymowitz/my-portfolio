@@ -13,6 +13,16 @@ export default function Projects() {
       </div>
       <div className="project-container">
         <Project
+          orient="right"
+          link="http://mezcalmtl.ca/"
+          title="Mezcal Montreal"
+          desc="Mezcal Montreal landing page"
+          stack="Gatsby, Sass, and GraphQL for image loading"
+          api="GetForm connected to Zapier and Google Docs for event registration"
+          image="/images/projects/MezcalMTL.png"
+          >
+        </Project>
+        <Project
           orient="left"
           link="http://www.dontdiefood.com/"
           title="Don't Die Food"
