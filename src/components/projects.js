@@ -41,15 +41,6 @@ export default function Projects() {
           api="OMDB for generating video information"
           image="/images/projects/Blockwagon.png">>
         </Project>
-        <Project
-          orient="left"
-          link="https://github.com/ehymowitz/Graphics-Projects"
-          title="Interactive Animations"
-          desc="Interactive graphics projects"
-          stack="p5.js, initially written in Processing (Java)"
-          api=""
-          image="/images/projects/Graphics.png">>
-        </Project>
       </div>
     </div>
   )
