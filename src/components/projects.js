@@ -17,7 +17,7 @@ export default function Projects() {
           link="http://mezcalmtl.ca/"
           title="Mezcal Montreal"
           desc="Mezcal Montreal landing page"
-          stack="Gatsby, Sass, and GraphQL for image loading"
+          stack="Gatsby, Material-UI, Sass, and GraphQL"
           api="GetForm connected to Zapier and Google Docs for event registration"
           image="/images/projects/MezcalMTL.png"
           >
