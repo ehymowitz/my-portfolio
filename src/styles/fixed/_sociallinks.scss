@@ -23,7 +23,7 @@
     text-align: center;
   }
   p {
-    margin: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     label {
@@ -34,6 +34,7 @@
       font-family: Poppins;
       min-height: 30px;
       padding: 5px;
+      border: 1px solid gainsboro;
     }
     textarea{
       font-family: Poppins;
