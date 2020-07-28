@@ -65,9 +65,9 @@ export default function SocialLinks() {
             <FaGithub /></a>
         </li>
         <li>
-          <a href="/#" onClick={handleOpen}>
+          <button onClick={handleOpen}>
             <AiOutlineMail />
-          </a>
+          </button>
           <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
