@@ -1,4 +1,5 @@
 import React from "react"
+import ContactForm from "../form"
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -15,10 +16,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    backgroundColor: "#F5F5F5",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    borderRadius: "10px",
+    outline: 'none',
   },
 }));
 
@@ -63,8 +65,27 @@ export default function SocialLinks() {
             <FaGithub /></a>
         </li>
         <li>
-          <a href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=ehymowitz@gmail.com' target="_blank" rel="noreferrer">
-            <AiOutlineMail /></a>
+          <a onClick={handleOpen}>
+            <AiOutlineMail />
+          </a>
+          <Modal
+            aria-labelledby="transition-modal-title"
+            aria-describedby="transition-modal-description"
+            className={classes.modal}
+            open={open}
+            onClose={handleClose}
+            closeAfterTransition
+            BackdropComponent={Backdrop}
+            BackdropProps={{
+              timeout: 500,
+            }}
+          >
+            <Fade in={open}>
+              <div className={classes.paper}>
+                <ContactForm />
+              </div>
+            </Fade>
+          </Modal>
         </li>
       </ul>
     </div>

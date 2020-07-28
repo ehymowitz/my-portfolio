@@ -11,6 +11,40 @@
   a {
     font-size: 24px;
     padding: 15px;
+    cursor: pointer;
+  }
+
+}
+.contact-form {
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    text-align: center;
+  }
+  p {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    label {
+      font-family: Poppins;
+      padding: 5px;
+    }
+    input {
+      font-family: Poppins;
+      min-height: 30px;
+      padding: 5px;
+    }
+    textarea{
+      font-family: Poppins;
+      min-height: 50px;
+      padding: 5px;
+      border: 1px solid gainsboro;
+    }
+  }
+  button {
+    width: 40%;
+    margin: 0 auto;
   }
 }
 
