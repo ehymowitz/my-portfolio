@@ -65,7 +65,7 @@ export default function SocialLinks() {
             <FaGithub /></a>
         </li>
         <li>
-          <a onClick={handleOpen}>
+          <a href="/#" onClick={handleOpen}>
             <AiOutlineMail />
           </a>
           <Modal
