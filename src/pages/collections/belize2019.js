@@ -1,80 +1,44 @@
-import React, { useState, useCallback } from "react";
-import Layout from "../../components/fixed/layout";
-import Photography from "../../components/photography";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import Fixed from "../../components/fixed/fixed";
-import { graphql } from "gatsby";
-
-export const query = graphql`
-  query {
-    allFile(filter: {relativePath: {regex: "/photos\\/collections\\/belize/"}}, sort: {fields: relativePath, order: ASC}) {
-      nodes {
-        relativePath
-        childImageSharp {
-          fluid {
-            base64
-            tracedSVG
-            srcWebp
-            srcSetWebp
-            originalImg
-            originalName
-          }
-          original {
-            src
-            height
-            width
-          }
-        }
-      }
-    }
-  }
-`
+import React from "react"
+import Layout from "../../components/fixed/layout"
+import Photography from "../../components/photography"
+import Fixed from "../../components/fixed/fixed"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import Masonry from 'react-masonry-css'
 
 export default function PhotoCollection({ data }) {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  const photos = data.allFile.nodes.map( p => p.childImageSharp.fluid)
 
-  const openLightbox = useCallback((event, { photo, index }) => {
-    if (window.innerWidth > 499) {
-      setCurrentImage(index);
-      setViewerIsOpen(true);
-    }
-  }, []);
+  const items = photos.map((item, i) => {
+    return <Img
+      fluid={item}
+      key={i}
+      style={{
+        margin: "0px 10px 10px 0px"
+      }}
+    />
+  });
 
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
+  // TODO: Impliment modal
+
+  const breakpointColumnsObj = {
+    default: 3,
+    1200: 2,
+    770: 1,
   };
-
-  const photos = data.allFile.nodes.map ( p => {
-    return {
-      src: p.childImageSharp.fluid.originalImg,
-      height: p.childImageSharp.original.height,
-      width: p.childImageSharp.original.width
-    }
-  })
 
   return(
     <Layout>
       <Fixed>
       </Fixed>
       <div className="gallery">
-        <Gallery photos={photos} onClick={openLightbox} />
-        <ModalGateway>
-          {viewerIsOpen ? (
-            <Modal onClose={closeLightbox}>
-              <Carousel
-                currentIndex={currentImage}
-                views={photos.map(x => ({
-                  ...x,
-                  srcset: x.srcSet,
-                  caption: x.title
-                }))}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+          >
+          {items}
+        </Masonry>
         <Photography
           heading="Other Collections">
         </Photography>
@@ -82,3 +46,17 @@ export default function PhotoCollection({ data }) {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    allFile(filter: {relativePath: {regex: "/photos\\/collections\\/belize/"}}, sort: {fields: relativePath, order: ASC}) {
+      nodes {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  }
+`
