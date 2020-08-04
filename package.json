@@ -31,7 +31,6 @@
     "react-icons": "^3.10.0",
     "react-images": "^1.1.7",
     "react-masonry-css": "^1.0.14",
-    "react-photo-gallery": "^8.0.0",
     "simple-react-lightbox": "^3.2.3-3",
     "smooth-scroll": "^16.1.3"
   },
