@@ -6,6 +6,17 @@
   overflow-x: scroll;
 }
 
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+.picture {
+  margin: 0px 10px 10px 0px;
+}
+
 @media only screen and (max-width: $Laptops) {
   .photo-collections {
     margin: 60px auto 7% auto;
