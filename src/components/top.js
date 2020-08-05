@@ -1,7 +1,12 @@
 import React from "react"
 import Carousel from "./cards/carousel"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Top() {
+  const photos = useStaticQuery(query)
+
+  console.log(photos.allFile.edges[0].node.childImageSharp.fluid)
+
   return (
     <div className='page-section' id='top'>
       <div className = 'hello-text'>
@@ -44,3 +49,20 @@ export default function Top() {
     </div>
   )
 }
+
+const query = graphql`
+  query recentQuery {
+    allFile(filter: {absolutePath: {regex: "/recent/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

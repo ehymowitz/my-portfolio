@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Photography({heading}) {
   const photos = useStaticQuery(query)
 
-  console.log(photos.allFile.edges)
+  console.log(photos.allFile.edges[0].node.childImageSharp.fluid)
 
   return (
     <div className='page-section' id='photography'>
@@ -78,4 +78,3 @@ const query = graphql`
     }
   }
 `
-

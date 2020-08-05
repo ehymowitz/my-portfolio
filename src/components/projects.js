@@ -1,7 +1,12 @@
 import React from "react"
 import Project from "../components/cards/project"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Projects() {
+  const photos = useStaticQuery(query)
+
+  console.log(photos.allFile.edges[0].node.childImageSharp.fluid)
+
   return (
     <div className='page-section' id='projects'>
       <div className="heading"
@@ -45,3 +50,20 @@ export default function Projects() {
     </div>
   )
 }
+
+const query = graphql`
+  query projectsQuery {
+    allFile(filter: {absolutePath: {regex: "/projects/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
