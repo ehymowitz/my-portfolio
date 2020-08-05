@@ -1,7 +1,12 @@
 import React from "react"
 import PhotoCover from "./cards/photo-cover"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Photography({heading}) {
+  const photos = useStaticQuery(query)
+
+  console.log(photos.allFile.edges)
+
   return (
     <div className='page-section' id='photography'>
       <div className="heading"
@@ -56,3 +61,21 @@ export default function Photography({heading}) {
     </div>
   )
 }
+
+const query = graphql`
+  query photographyQuery {
+    allFile(filter: {absolutePath: {regex: "/covers/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
+

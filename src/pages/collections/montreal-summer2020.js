@@ -11,11 +11,7 @@ const options = {
   buttons: {
     showDownloadButton: false,
     showAutoplayButton: false,
-    showThumbnailsButton: false,
   },
-  thumbnails: {
-    showThumbnails: false,
-  }
 }
 
 export default function PhotoCollection({ data }) {
