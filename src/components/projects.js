@@ -5,8 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Projects() {
   const photos = useStaticQuery(query)
 
-  console.log(photos.allFile.edges[0].node.childImageSharp.fluid)
-
   return (
     <div className='page-section' id='projects'>
       <div className="heading"
@@ -24,7 +22,7 @@ export default function Projects() {
           desc="Mezcal Montreal landing page"
           stack="Gatsby, Material-UI, Sass, and GraphQL"
           api="GetForm connected to Zapier and Google Docs for event registration"
-          image="/images/projects/MezcalMTL.png"
+          image={photos.allFile.edges[2].node.childImageSharp.fluid}
           >
         </Project>
         <Project
@@ -34,7 +32,7 @@ export default function Projects() {
           desc="Mobile-first webapp for sharing food in local communities"
           stack="Ruby on Rails - Ruby, HTML, CSS, JS "
           api="Spoonacular for recipe generation"
-          image="/images/projects/DDF.png"
+          image={photos.allFile.edges[0].node.childImageSharp.fluid}
           >
         </Project>
         <Project
@@ -44,7 +42,8 @@ export default function Projects() {
           desc="Online marketplace for VHS tapes"
           stack="Ruby on Rails - Ruby, HTML, CSS, JS "
           api="OMDB for generating video information"
-          image="/images/projects/Blockwagon.png">>
+          image={photos.allFile.edges[1].node.childImageSharp.fluid}
+          >
         </Project>
       </div>
     </div>
