@@ -2,6 +2,7 @@ import React from "react"
 import { GiFClef } from "react-icons/gi";
 import { BsCodeSlash } from "react-icons/bs"
 import { RiCamera3Line } from "react-icons/ri"
+import Img from "gatsby-image"
 
 export default function Carousel({title, desc, type, image, link}) {
   return(
@@ -13,10 +14,10 @@ export default function Carousel({title, desc, type, image, link}) {
       </div>
       <a href= {link} target="_blank" rel="noreferrer">
         <div className = "imageContainer">
-          <img
+          <Img
             className="image"
             alt = "Recent Project"
-            src = {image}
+            fluid = {image}
           />
         </div>
         <div className="carousel-text">

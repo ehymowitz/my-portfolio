@@ -1,7 +1,10 @@
 import React from "react"
 import Carousel from "./cards/carousel"
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Top() {
+  const photos = useStaticQuery(query)
+
   return (
     <div className='page-section' id='top'>
       <div className = 'hello-text'>
@@ -17,7 +20,7 @@ export default function Top() {
               title="Mezcal MTL"
               desc="Lightweight Landing Page"
               type="code"
-              image='/images/recent/Mezcal.png'
+              image={photos.allFile.edges[0].node.childImageSharp.fluid}
               link="http://mezcalmtl.ca/">
             </Carousel>
           </li>
@@ -26,7 +29,7 @@ export default function Top() {
               title="OAP Live Online"
               desc="with Andria Piperni"
               type="music"
-              image="/images/recent/Andria.png"
+              image={photos.allFile.edges[1].node.childImageSharp.fluid}
               link ="https://youtu.be/D78yEbn_03I">
             </Carousel>
           </li>
@@ -35,7 +38,7 @@ export default function Top() {
               title="Montreal Summer 2020"
               desc="Nikon D300"
               type="photo"
-              image="/images/recent/Quavo.png"
+              image={photos.allFile.edges[2].node.childImageSharp.fluid}
               link="/#photography">
             </Carousel>
           </li>
@@ -44,3 +47,20 @@ export default function Top() {
     </div>
   )
 }
+
+const query = graphql`
+  query recentQuery {
+    allFile(filter: {absolutePath: {regex: "/recent/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

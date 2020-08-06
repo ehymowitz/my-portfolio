@@ -1,8 +1,10 @@
 import React from "react"
+import Img from "gatsby-image"
 
 export default function Project({orient, link, title, desc, stack, api, image}) {
   const classes = "project-card " + orient
   const usedapi = "API: " + api
+
   return (
     <div className={classes}
       data-sal="fade"
@@ -10,7 +12,7 @@ export default function Project({orient, link, title, desc, stack, api, image}) 
       data-sal-duration="1500"
     >
       <a href={link} target="_blank" rel="noreferrer">
-        <img src= {image} alt={title}/>
+        <Img fluid={image} alt={title} className="project-image"/>
       </a>
       <div className="project-text">
         <h2>

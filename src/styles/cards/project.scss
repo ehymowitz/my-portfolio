@@ -27,10 +27,10 @@
 
   a {
     box-shadow: $shadow;
-    max-width: 45%;
+    min-width: 45%;
 
-    img {
-      width: 100%;
+    .project-image {
+      min-width: 100%;
     }
   }
 }
@@ -53,10 +53,10 @@
 
     a {
       box-shadow: $shadow;
-      max-width: 80%;
+      min-width: 70%;
       img {
         overflow: hidden;
-        width: 100%;
+        min-width: 100%;
       }
     }
   }
