@@ -23,6 +23,28 @@
     p {
       margin-bottom: 2px;
     }
+
+    .stack-item-wrapper{
+      margin: 10px auto;
+      display: grid;
+      grid-gap: 0rem 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+
+      .stack-item {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #8e8e8e;
+
+        img {
+          object-fit: scale-down;
+          width: inherit;
+        }
+      }
+    }
   }
 
   a {
@@ -57,6 +79,20 @@
       img {
         overflow: hidden;
         min-width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $Laptops-big) {
+ .project-card {
+    .project-text {
+      .stack-item-wrapper{
+        .stack-item {
+          width: 50px;
+          height: 50px;
+          padding: 20px;
+        }
       }
     }
   }
