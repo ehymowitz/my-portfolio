@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 
 export default function Project({orient, link, title, desc, stack, api, image}) {
   const classes = "project-card " + orient
-  const usedapi = "API: " + api
+  const usedapi = "*Additional APIs: " + api
 
   console.log(stack)
 
@@ -28,16 +28,20 @@ export default function Project({orient, link, title, desc, stack, api, image}) 
             stack.map((item) => (
               <div className="stack-item">
                 <img src={`/logos/${item}`} alt=""/>
-                <p>
-                  {item}
-                </p>
+                <div className="hover-text">
+                  <p>
+                    {item.split(".")[0]}
+                  </p>
+                </div>
               </div>
             ))
           }
         </div>
-        <small>
-          {api && usedapi}
-        </small>
+        <div className="api-text">
+          <small>
+            {api && usedapi}
+          </small>
+        </div>
       </div>
     </div>
   )

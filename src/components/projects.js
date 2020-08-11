@@ -20,7 +20,7 @@ export default function Projects() {
           link="http://mezcalmtl.ca/"
           title="Mezcal Montreal"
           desc="Mezcal Montreal landing page"
-          stack={["gatsby.png", "materialui.svg", "sass.png", "graphql.svg", "getform.svg"]}
+          stack={["Gatsby.png", "MaterialUI.svg", "Sass.png", "GraphQL.svg", "Getform.svg"]}
           api="GetForm connected to Zapier and Google Docs for event registration"
           image={photos.allFile.edges[2].node.childImageSharp.fluid}
           >
@@ -30,7 +30,7 @@ export default function Projects() {
           link="http://www.dontdiefood.com/"
           title="Don't Die Food"
           desc="Mobile-first webapp for sharing food in local communities"
-          stack={["rails.svg", "ruby.svg", "html5.svg", "css3.png", "javascript.png"]}
+          stack={["Rails.svg", "Ruby.svg", "HTML5.svg", "CSS3.png", "Javascript.png"]}
           api="Spoonacular for recipe generation"
           image={photos.allFile.edges[0].node.childImageSharp.fluid}
           >
@@ -40,7 +40,7 @@ export default function Projects() {
           link="https://blockwagon.herokuapp.com/"
           title="Blockwagon"
           desc="Online marketplace for VHS tapes"
-          stack={["rails.svg", "ruby.svg", "html5.svg", "css3.png", "javascript.png"]}
+          stack={["Rails.svg", "Ruby.svg", "HTML5.svg", "CSS3.png", "Javascript.png"]}
           api="OMDB for generating video information"
           image={photos.allFile.edges[1].node.childImageSharp.fluid}
           >

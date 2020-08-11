@@ -24,6 +24,13 @@
       margin-bottom: 2px;
     }
 
+    .api-text {
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 12px;
+    }
+
     .stack-item-wrapper{
       margin: 10px auto;
       display: grid;
@@ -45,16 +52,20 @@
           width: inherit;
         }
 
-        p {
+        .hover-text{
+          text-align: center;
           opacity: 0;
           position: absolute;
           font-size: 12px;
           top: 55px;
-          left: 4px;
-          transition: 500ms;
+          transition: opacity 500ms;
+          left: 0px;
+          width: 100%;
+          p {
+          }
         }
       }
-      .stack-item:hover p {
+      .stack-item:hover .hover-text {
         opacity: 1;
       }
     }
@@ -97,6 +108,20 @@
   }
 }
 
+@media only screen and (max-width: $Phones) {
+ .project-card {
+    .project-text {
+      .stack-item-wrapper{
+        .stack-item {
+          width: 20px;
+          height: 20px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: $Laptops-big) {
  .project-card {
     .project-text {
@@ -105,6 +130,9 @@
           width: 50px;
           height: 50px;
           padding: 20px;
+          .hover-text{
+            top: 92px;
+          }
         }
       }
     }
