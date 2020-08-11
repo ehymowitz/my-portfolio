@@ -3,6 +3,7 @@
   position: relative;
   box-shadow: $shadow;
   .icon {
+    z-index: 1;
     position: absolute;
     font-size: 1.5em;
     line-height: 24px;
