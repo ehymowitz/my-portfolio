@@ -28,12 +28,7 @@ export default function Project({orient, link, title, desc, stack, api, image}) 
             stack.map((item) => (
               <div className="stack-item">
                 <img src={`/logos/${item}`} alt=""/>
-                <p style={{
-                  position: "absolute",
-                  fontSize: "12px",
-                  top: "55px",
-                  left: "4px"
-                }}>
+                <p>
                   {item}
                 </p>
               </div>

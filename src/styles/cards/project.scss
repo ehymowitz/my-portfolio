@@ -44,6 +44,18 @@
           object-fit: scale-down;
           width: inherit;
         }
+
+        p {
+          opacity: 0;
+          position: absolute;
+          font-size: 12px;
+          top: 55px;
+          left: 4px;
+          transition: 500ms;
+        }
+      }
+      .stack-item:hover p {
+        opacity: 1;
       }
     }
   }
