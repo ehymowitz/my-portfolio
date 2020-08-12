@@ -5,12 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Photography({heading}) {
   const photos = useStaticQuery(query)
 
-  let covers = photos.allFile.edges.map((photo) => {
-    return photo.node.childImageSharp.fluid
-  })
-
-  covers = [ ... new Set(covers)]
-
   return (
     <div className='page-section' id='photography'>
       <div className="heading"
@@ -28,35 +22,35 @@ export default function Photography({heading}) {
       >
         <PhotoCover
           link="montreal-summer2020"
-          cover={covers[0]}
+          cover={photos.summer.edges[0].node.childImageSharp.fluid}
           title="Montreal Summer 2020"
           camera="Nikon D300"
         >
         </PhotoCover>
         <PhotoCover
           link="concert-photos"
-          cover={covers[4]}
+          cover={photos.concert.edges[0].node.childImageSharp.fluid}
           title="Concert Photography"
           camera="Nikon D7000"
         >
         </PhotoCover>
         <PhotoCover
           link="montreal-winter2020"
-          cover={covers[1]}
+          cover={photos.winter.edges[0].node.childImageSharp.fluid}
           title="Montreal Winter/ Spring 2020"
           camera="Nikon D300, Film"
         >
         </PhotoCover>
         <PhotoCover
           link="van2020"
-          cover={covers[2]}
+          cover={photos.van.edges[0].node.childImageSharp.fluid}
           title="Vancouver 2020"
           camera="Nikon D300"
         >
         </PhotoCover>
         <PhotoCover
           link="belize2019"
-          cover={covers[3]}
+          cover={photos.belize.edges[0].node.childImageSharp.fluid}
           title="Belize 2019"
           camera="Film, Cell Phone"
         >
@@ -68,7 +62,55 @@ export default function Photography({heading}) {
 
 const query = graphql`
   query photographyQuery {
-    allFile(filter: {absolutePath: {regex: "/covers/"}}) {
+    summer: allFile(filter: {absolutePath: {regex: "/Summer/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    concert: allFile(filter: {absolutePath: {regex: "/Concert/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    winter: allFile(filter: {absolutePath: {regex: "/Summer/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    van: allFile(filter: {absolutePath: {regex: "/Van/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    belize: allFile(filter: {absolutePath: {regex: "/Belize/"}}) {
       edges {
         node {
           id
