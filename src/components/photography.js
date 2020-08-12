@@ -28,35 +28,35 @@ export default function Photography({heading}) {
       >
         <PhotoCover
           link="montreal-summer2020"
-          cover={photos.allFile.edges[0].node.childImageSharp.fluid}
+          cover={covers[0]}
           title="Montreal Summer 2020"
           camera="Nikon D300"
         >
         </PhotoCover>
         <PhotoCover
           link="concert-photos"
-          cover={photos.allFile.edges[4].node.childImageSharp.fluid}
+          cover={covers[4]}
           title="Concert Photography"
           camera="Nikon D7000"
         >
         </PhotoCover>
         <PhotoCover
           link="montreal-winter2020"
-          cover={photos.allFile.edges[1].node.childImageSharp.fluid}
+          cover={covers[1]}
           title="Montreal Winter/ Spring 2020"
           camera="Nikon D300, Film"
         >
         </PhotoCover>
         <PhotoCover
           link="van2020"
-          cover={photos.allFile.edges[2].node.childImageSharp.fluid}
+          cover={covers[2]}
           title="Vancouver 2020"
           camera="Nikon D300"
         >
         </PhotoCover>
         <PhotoCover
           link="belize2019"
-          cover={photos.allFile.edges[3].node.childImageSharp.fluid}
+          cover={covers[3]}
           title="Belize 2019"
           camera="Film, Cell Phone"
         >
