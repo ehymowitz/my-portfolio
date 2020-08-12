@@ -86,7 +86,7 @@ const query = graphql`
         }
       }
     }
-    winter: allFile(filter: {absolutePath: {regex: "/Summer/"}}) {
+    winter: allFile(filter: {absolutePath: {regex: "/Winter/"}}) {
       edges {
         node {
           id
