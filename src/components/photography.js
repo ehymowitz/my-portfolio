@@ -4,7 +4,12 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export default function Photography({heading}) {
   const photos = useStaticQuery(query)
-  console.log(photos)
+
+  let covers = photos.allFile.edges.map((photo) => {
+    return photo.node.childImageSharp.fluid
+  })
+
+  covers = [ ... new Set(covers)]
 
   return (
     <div className='page-section' id='photography'>

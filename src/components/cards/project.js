@@ -23,8 +23,8 @@ export default function Project({orient, link, title, desc, stack, api, image}) 
         </p>
         <div className="stack-item-wrapper">
           {
-            stack.map((item) => (
-              <div className="stack-item">
+            stack.map((item, i) => (
+              <div key={i} className="stack-item">
                 <img src={`/logos/${item}`} alt=""/>
                 <div className="hover-text">
                   <p>
