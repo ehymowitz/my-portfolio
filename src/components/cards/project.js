@@ -5,8 +5,6 @@ export default function Project({orient, link, title, desc, stack, api, image}) 
   const classes = "project-card " + orient
   const usedapi = "*Additional APIs: " + api
 
-  console.log(stack)
-
   return (
     <div className={classes}
       data-sal="fade"
