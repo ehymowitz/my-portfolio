@@ -17,7 +17,7 @@ export default function Projects() {
   const photos = useStaticQuery(query)
 
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.9,
   })
 
   const logo = document.querySelector("#github > a > svg")
@@ -27,15 +27,15 @@ export default function Projects() {
   }
 
   return (
-    <div className='page-section' id='projects' ref={ref}>
+    <div className='page-section' id='projects' >
       <div className="heading"
         data-sal="fade"
         data-sal-easing="ease"
         data-sal-duration="1500"
       >
-        <h1>Projects I've Developed</h1>
+        <h1 ref={ref} >Projects I've Developed</h1>
       </div>
-      <div className="project-container" ref={ref}>
+      <div className="project-container">
         <Project
           orient="right"
           link="http://mezcalmtl.ca/"
