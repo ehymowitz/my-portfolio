@@ -26,7 +26,7 @@ export default function Music() {
   }
 
   return (
-    <div className='page-section' id='music' ref={ref}>
+    <div className='page-section' id='music'>
       <div className="heading"
         data-sal="fade"
         data-sal-easing="ease"
@@ -34,7 +34,7 @@ export default function Music() {
       >
         <h1>Music I've Played</h1>
       </div>
-      <div className="music-container"
+      <div ref={ref} className="music-container"
         data-sal="fade"
         data-sal-delay="200"
         data-sal-easing="ease"

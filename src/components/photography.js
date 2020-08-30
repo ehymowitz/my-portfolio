@@ -15,7 +15,9 @@ const colorChange = (logo, color) => {
 export default function Photography({heading}) {
   const photos = useStaticQuery(query)
 
-  const [ref, inView] = useInView()
+  const [ref, inView] = useInView({
+    threshold: 0.2
+  })
 
   const logo = document.querySelector("#mail > a > svg")
 
@@ -24,7 +26,7 @@ export default function Photography({heading}) {
   }
 
   return (
-    <div className='page-section' id='photography' ref={ref} >
+    <div className='page-section' id='photography' >
       <div className="heading"
         data-sal="fade"
         data-sal-easing="ease"
@@ -32,7 +34,7 @@ export default function Photography({heading}) {
       >
         <h1>{heading}</h1>
       </div>
-      <div className="photo-collections"
+      <div ref={ref} className="photo-collections"
         data-sal="fade"
         data-sal-delay="200"
         data-sal-easing="ease"

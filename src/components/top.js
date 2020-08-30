@@ -16,7 +16,9 @@ export default function Top() {
 
   const photos = useStaticQuery(query)
 
-  const [ref, inView] = useInView()
+  const [ref, inView] = useInView({
+    threshold: 0.9
+  })
 
   const logo = document.querySelector("#linkedin > a > svg")
 
