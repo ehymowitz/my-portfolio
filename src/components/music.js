@@ -1,5 +1,6 @@
 import React from "react"
 import { useInView } from "react-intersection-observer"
+import { document } from "browser-monads"
 import MusicCard from "../components/cards/music-card"
 
 const colorChange = (logo, color) => {

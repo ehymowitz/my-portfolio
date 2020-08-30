@@ -1,5 +1,6 @@
 import React from "react"
 import { useInView } from "react-intersection-observer"
+import { document } from "browser-monads"
 import Carousel from "./cards/carousel"
 import { useStaticQuery, graphql } from "gatsby"
 

@@ -1,5 +1,6 @@
 import React from "react"
 import { useInView } from "react-intersection-observer"
+import { document } from "browser-monads"
 import PhotoCover from "./cards/photo-cover"
 import { useStaticQuery, graphql } from "gatsby"
 

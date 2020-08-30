@@ -1,5 +1,6 @@
 import React from "react"
 import { useInView } from "react-intersection-observer"
+import { document } from "browser-monads"
 import Project from "../components/cards/project"
 import { useStaticQuery, graphql } from "gatsby"
 
