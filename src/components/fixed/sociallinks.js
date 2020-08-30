@@ -1,11 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import ContactForm from "../form"
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import {
-  FaFacebookF, FaInstagram, FaSpotify, FaLinkedinIn, FaGithub
+  FaInstagram, FaSpotify, FaLinkedinIn, FaGithub
 } from 'react-icons/fa';
 import { AiOutlineMail } from "react-icons/ai"
 
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 export default function SocialLinks() {
 
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);

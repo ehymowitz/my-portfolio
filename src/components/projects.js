@@ -57,7 +57,7 @@ const query = graphql`
         node {
           id
           childImageSharp {
-            fluid {
+            fluid(fit: COVER) {
               ...GatsbyImageSharpFluid
             }
           }
