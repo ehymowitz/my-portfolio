@@ -1,9 +1,32 @@
 import React from "react"
+import { useInView } from "react-intersection-observer"
 import MusicCard from "../components/cards/music-card"
 
+const colorChange = (logo, color) => {
+  logo.style.boxShadow = `0px 0px 10px 8px ${color}`
+  logo.style.backgroundColor = color
+  setTimeout(() => {
+      logo.style.backgroundColor = "rgba(0,0,0,0)"
+      logo.style.boxShadow = `0px 0px 0px 0px ${color}`
+    }, 500)
+}
+
 export default function Music() {
+
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  })
+
+  const logo1 = document.querySelector("#instagram > a > svg")
+  const logo2 = document.querySelector("#spotify > a > svg")
+
+  if (inView) {
+    colorChange(logo1, "rgb(225, 48, 108")
+    colorChange(logo2, "rgb(30, 215, 96")
+  }
+
   return (
-    <div className='page-section' id='music'>
+    <div className='page-section' id='music' ref={ref}>
       <div className="heading"
         data-sal="fade"
         data-sal-easing="ease"

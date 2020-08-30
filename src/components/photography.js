@@ -1,12 +1,30 @@
 import React from "react"
+import { useInView } from "react-intersection-observer"
 import PhotoCover from "./cards/photo-cover"
 import { useStaticQuery, graphql } from "gatsby"
+
+const colorChange = (logo, color) => {
+  logo.style.boxShadow = `0px 0px 10px 8px ${color}`
+  logo.style.backgroundColor = color
+  setTimeout(() => {
+      logo.style.backgroundColor = "rgba(0,0,0,0)"
+      logo.style.boxShadow = `0px 0px 0px 0px ${color}`
+    }, 500)
+}
 
 export default function Photography({heading}) {
   const photos = useStaticQuery(query)
 
+  const [ref, inView] = useInView()
+
+  const logo = document.querySelector("#mail > a > svg")
+
+  if (inView) {
+    colorChange(logo, "rgb(198,198,198)")
+  }
+
   return (
-    <div className='page-section' id='photography'>
+    <div className='page-section' id='photography' ref={ref} >
       <div className="heading"
         data-sal="fade"
         data-sal-easing="ease"

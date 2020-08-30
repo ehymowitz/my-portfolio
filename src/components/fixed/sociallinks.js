@@ -40,26 +40,26 @@ export default function SocialLinks() {
   return (
     <div className='social-links'>
       <ul>
-        <li>
+        <li id="linkedin">
           <a href='https://www.linkedin.com/in/eliehymowitz/' target="_blank" rel="noreferrer">
             <FaLinkedinIn />
           </a>
         </li>
-        <li>
+        <li id="github">
           <a href='https://github.com/ehymowitz' target="_blank" rel="noreferrer">
             <FaGithub /></a>
         </li>
-        <li>
+        <li id="instagram" >
           <a href='https://www.instagram.com/elie.s.h/' target="_blank" rel="noreferrer">
             <FaInstagram />
           </a>
         </li>
-        <li>
+        <li id="spotify">
           <a href='https://open.spotify.com/playlist/2ieh5fIUHEdPw5dnwS2wcp?si=Q7GnR3flREOSEcb3ME6HzA' target="_blank" rel="noreferrer">
             <FaSpotify />
           </a>
         </li>
-        <li>
+        <li id="mail">
           <a href="/#" onClick={handleOpen}>
             <AiOutlineMail />
           </a>

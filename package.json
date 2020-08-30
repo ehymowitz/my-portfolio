@@ -30,6 +30,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
     "react-images": "^1.1.7",
+    "react-intersection-observer": "^8.27.1",
     "react-masonry-css": "^1.0.14",
     "simple-react-lightbox": "^3.2.3-3",
     "smooth-scroll": "^16.1.3"

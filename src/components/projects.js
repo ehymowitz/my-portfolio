@@ -1,12 +1,33 @@
 import React from "react"
+import { useInView } from "react-intersection-observer"
 import Project from "../components/cards/project"
 import { useStaticQuery, graphql } from "gatsby"
 
+const colorChange = (logo, color) => {
+  logo.style.boxShadow = `0px 0px 10px 8px ${color}`
+  logo.style.backgroundColor = color
+  setTimeout(() => {
+      logo.style.backgroundColor = "rgba(0,0,0,0)"
+      logo.style.boxShadow = `0px 0px 0px 0px ${color}`
+    }, 500)
+}
+
 export default function Projects() {
+
   const photos = useStaticQuery(query)
 
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  })
+
+  const logo = document.querySelector("#github > a > svg")
+
+  if (inView) {
+    colorChange(logo, "rgb(112,66,193)")
+  }
+
   return (
-    <div className='page-section' id='projects'>
+    <div className='page-section' id='projects' ref={ref}>
       <div className="heading"
         data-sal="fade"
         data-sal-easing="ease"
@@ -14,7 +35,7 @@ export default function Projects() {
       >
         <h1>Projects I've Developed</h1>
       </div>
-      <div className="project-container">
+      <div className="project-container" ref={ref}>
         <Project
           orient="right"
           link="http://mezcalmtl.ca/"

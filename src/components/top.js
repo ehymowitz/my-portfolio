@@ -1,12 +1,31 @@
 import React from "react"
+import { useInView } from "react-intersection-observer"
 import Carousel from "./cards/carousel"
 import { useStaticQuery, graphql } from "gatsby"
 
+const colorChange = (logo, color) => {
+  logo.style.boxShadow = `0px 0px 10px 8px ${color}`
+  logo.style.backgroundColor = color
+  setTimeout(() => {
+      logo.style.backgroundColor = "rgba(0,0,0,0)"
+      logo.style.boxShadow = `0px 0px 0px 0px ${color}`
+    }, 500)
+}
+
 export default function Top() {
+
   const photos = useStaticQuery(query)
 
+  const [ref, inView] = useInView()
+
+  const logo = document.querySelector("#linkedin > a > svg")
+
+  if (inView) {
+    colorChange(logo, "rgb(40,103,178)")
+  }
+
   return (
-    <div className='page-section' id='top'>
+    <div className='page-section' id='top' ref={ref}>
       <div className = 'hello-text'>
         <h1>Hi, I'm Elie</h1>
         <h2>I'm a web developer / musician / maker of things.</h2>
