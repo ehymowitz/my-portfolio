@@ -83,7 +83,7 @@ export default function Photography({heading}) {
 
 const query = graphql`
   query photographyQuery {
-    summer: allFile(filter: {absolutePath: {regex: "/Summer/"}}) {
+    summer: allFile(filter: {absolutePath: {regex: "/covers\/MTLSummer/"}}) {
       edges {
         node {
           id
@@ -95,7 +95,7 @@ const query = graphql`
         }
       }
     }
-    concert: allFile(filter: {absolutePath: {regex: "/Concert/"}}) {
+    concert: allFile(filter: {absolutePath: {regex: "/covers\/Concert/"}}) {
       edges {
         node {
           id
@@ -107,7 +107,7 @@ const query = graphql`
         }
       }
     }
-    winter: allFile(filter: {absolutePath: {regex: "/Winter/"}}) {
+    winter: allFile(filter: {absolutePath: {regex: "/covers\/MTLWinter/"}}) {
       edges {
         node {
           id
@@ -119,7 +119,7 @@ const query = graphql`
         }
       }
     }
-    van: allFile(filter: {absolutePath: {regex: "/Van/"}}) {
+    van: allFile(filter: {absolutePath: {regex: "/covers\/Van/"}}) {
       edges {
         node {
           id
@@ -131,7 +131,7 @@ const query = graphql`
         }
       }
     }
-    belize: allFile(filter: {absolutePath: {regex: "/Belize/"}}) {
+    belize: allFile(filter: {absolutePath: {regex: "/covers\/Belize/"}}) {
       edges {
         node {
           id
