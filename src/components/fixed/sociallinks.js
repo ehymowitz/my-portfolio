@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import ContactForm from "../form"
+import colorChange from "../../../color-change"
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -42,26 +43,26 @@ export default function SocialLinks() {
       <ul>
         <li id="linkedin">
           <a href='https://www.linkedin.com/in/eliehymowitz/' target="_blank" rel="noreferrer">
-            <FaLinkedinIn />
+            <FaLinkedinIn onMouseEnter={({target})=>{colorChange(target, "rgba(40, 103, 178, 0.3)")}}/>
           </a>
         </li>
         <li id="github">
           <a href='https://github.com/ehymowitz' target="_blank" rel="noreferrer">
-            <FaGithub /></a>
+            <FaGithub onMouseEnter={({target})=>{colorChange(target, "rgba(112, 66, 193, 0.3)")}}/></a>
         </li>
         <li id="instagram" >
           <a href='https://www.instagram.com/elie.s.h/' target="_blank" rel="noreferrer">
-            <FaInstagram />
+            <FaInstagram onMouseEnter={({target})=>{colorChange(target, "rgba(225, 48, 108, 0.3)")}}/>
           </a>
         </li>
         <li id="spotify">
           <a href='https://open.spotify.com/playlist/2ieh5fIUHEdPw5dnwS2wcp?si=Q7GnR3flREOSEcb3ME6HzA' target="_blank" rel="noreferrer">
-            <FaSpotify />
+            <FaSpotify onMouseEnter={({target})=>{colorChange(target, "rgba(30, 215, 96, 0.3)")}}/>
           </a>
         </li>
         <li id="mail">
           <a href="/#" onClick={handleOpen}>
-            <AiOutlineMail />
+            <AiOutlineMail onMouseEnter={({target})=>{colorChange(target, "rgba(198, 198, 198, 0.3)")}}/>
           </a>
           <Modal
             aria-labelledby="transition-modal-title"

@@ -13,10 +13,10 @@ export default function Projects() {
     threshold: 0.9,
   })
 
-  const logo = document.querySelector("#github > a > svg")
+  const github = document.querySelector("#github > a > svg")
 
   if (inView) {
-    colorChange(logo, "rgba(112, 66, 193, 0.3)")
+    colorChange(github, "rgba(112, 66, 193, 0.3)")
   }
 
   return (

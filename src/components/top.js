@@ -13,10 +13,10 @@ export default function Top() {
     threshold: 0.9
   })
 
-  const logo = document.querySelector("#linkedin > a > svg")
+  const linkedin = document.querySelector("#linkedin > a > svg")
 
   if (inView) {
-    colorChange(logo, "rgba(40, 103, 178, 0.3)")
+    colorChange(linkedin, "rgba(40, 103, 178, 0.3)")
   }
 
   return (

@@ -11,12 +11,12 @@ export default function Music() {
     threshold: 0.5,
   })
 
-  const logo1 = document.querySelector("#instagram > a > svg")
-  const logo2 = document.querySelector("#spotify > a > svg")
+  const instagram = document.querySelector("#instagram > a > svg")
+  const spotify = document.querySelector("#spotify > a > svg")
 
   if (inView) {
-    colorChange(logo1, "rgba(225, 48, 108, 0.3")
-    colorChange(logo2, "rgba(30, 215, 96, 0.3")
+    colorChange(instagram, "rgba(225, 48, 108, 0.3")
+    colorChange(spotify, "rgba(30, 215, 96, 0.3")
   }
 
   return (

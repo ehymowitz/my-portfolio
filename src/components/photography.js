@@ -12,10 +12,10 @@ export default function Photography({heading}) {
     threshold: 0.2
   })
 
-  const logo = document.querySelector("#mail > a > svg")
+  const mail = document.querySelector("#mail > a > svg")
 
   if (inView) {
-    colorChange(logo, "rgba(198, 198, 198, 0.3)")
+    colorChange(mail, "rgba(198, 198, 198, 0.3)")
   }
 
   return (
