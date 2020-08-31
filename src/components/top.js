@@ -24,7 +24,7 @@ export default function Top() {
   const logo = document.querySelector("#linkedin > a > svg")
 
   if (inView) {
-    colorChange(logo, "rgb(40,103,178)")
+    colorChange(logo, "rgba(40, 103, 178, 0.3)")
   }
 
   return (

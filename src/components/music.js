@@ -22,8 +22,8 @@ export default function Music() {
   const logo2 = document.querySelector("#spotify > a > svg")
 
   if (inView) {
-    colorChange(logo1, "rgb(225, 48, 108")
-    colorChange(logo2, "rgb(30, 215, 96")
+    colorChange(logo1, "rgba(225, 48, 108, 0.3")
+    colorChange(logo2, "rgba(30, 215, 96, 0.3")
   }
 
   return (

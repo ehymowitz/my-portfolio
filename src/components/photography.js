@@ -23,7 +23,7 @@ export default function Photography({heading}) {
   const logo = document.querySelector("#mail > a > svg")
 
   if (inView) {
-    colorChange(logo, "rgb(198,198,198)")
+    colorChange(logo, "rgba(198, 198, 198, 0.3)")
   }
 
   return (

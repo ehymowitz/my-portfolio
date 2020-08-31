@@ -24,7 +24,7 @@ export default function Projects() {
   const logo = document.querySelector("#github > a > svg")
 
   if (inView) {
-    colorChange(logo, "rgb(112,66,193)")
+    colorChange(logo, "rgba(112, 66, 193, 0.3)")
   }
 
   return (
