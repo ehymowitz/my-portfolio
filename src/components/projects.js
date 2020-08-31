@@ -1,17 +1,9 @@
 import React from "react"
 import { useInView } from "react-intersection-observer"
+import colorChange from "../../color-change"
 import { document } from "browser-monads"
 import Project from "../components/cards/project"
 import { useStaticQuery, graphql } from "gatsby"
-
-const colorChange = (logo, color) => {
-  logo.style.boxShadow = `0px 0px 10px 8px ${color}`
-  logo.style.backgroundColor = color
-  setTimeout(() => {
-      logo.style.backgroundColor = "rgba(0,0,0,0)"
-      logo.style.boxShadow = `0px 0px 0px 0px ${color}`
-    }, 500)
-}
 
 export default function Projects() {
 
