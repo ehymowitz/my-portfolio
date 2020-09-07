@@ -29,6 +29,16 @@ export default function Projects() {
         <h1 ref={ref} >Projects I've Developed</h1>
       </div>
       <div className="project-container">
+      <Project
+        orient="left"
+        link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/"
+        title="Sampler Sequencer"
+        desc="An ongoing project to create an MPC/ TR808 inspired webapp"
+        stack={["React.svg", "Firebase.png", "Javascript.png", "MaterialUI.svg", "Sass.png"]}
+        api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
+        image={photos.sequencer.edges[0].node.childImageSharp.fluid}
+        >
+      </Project>
         <Project
           orient="right"
           link="http://mezcalmtl.ca/"
@@ -76,6 +86,18 @@ export default function Projects() {
 
 const query = graphql`
   query projectsQuery {
+    sequencer: allFile(filter: {absolutePath: {regex: "/Sequencer/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(fit: COVER) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
     mezcal: allFile(filter: {absolutePath: {regex: "/MezcalMTL/"}}) {
       edges {
         node {
