@@ -33,7 +33,7 @@ export default function Projects() {
         orient="left"
         link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/"
         title="Sampler Sequencer"
-        desc="An ongoing project to create an MPC/ TR808 inspired webapp"
+        desc="MPC3000 / TR808 inspired webapp"
         stack={["React.svg", "Firebase.png", "Javascript.png", "MaterialUI.svg", "Sass.png"]}
         api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
         image={photos.sequencer.edges[0].node.childImageSharp.fluid}

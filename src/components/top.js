@@ -31,8 +31,8 @@ export default function Top() {
         <ul className = 'projects-container'>
           <li>
             <Carousel
-              title="Mezcal MTL"
-              desc="Lightweight Landing Page"
+              title="S E Q U E N C E"
+              desc="Sampler/ Sequencer Webapp"
               type="code"
               image={photos.allFile.edges[0].node.childImageSharp.fluid}
               link="http://mezcalmtl.ca/">
