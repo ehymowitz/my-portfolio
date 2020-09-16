@@ -35,7 +35,7 @@ export default function Top() {
               desc="Sampler/ Sequencer Webapp"
               type="code"
               image={photos.allFile.edges[0].node.childImageSharp.fluid}
-              link="http://mezcalmtl.ca/">
+              link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/">
             </Carousel>
           </li>
           <li>
