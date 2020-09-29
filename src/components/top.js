@@ -34,7 +34,7 @@ export default function Top() {
               title="S E Q U E N C E"
               desc="Sampler/ Sequencer Webapp"
               type="code"
-              image={photos.allFile.edges[0].node.childImageSharp.fluid}
+              image={photos.code.edges[0].node.childImageSharp.fluid}
               link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/">
             </Carousel>
           </li>
@@ -43,7 +43,7 @@ export default function Top() {
               title="OAP Live Online"
               desc="with Andria Piperni"
               type="music"
-              image={photos.allFile.edges[1].node.childImageSharp.fluid}
+              image={photos.music.edges[0].node.childImageSharp.fluid}
               link ="https://youtu.be/D78yEbn_03I">
             </Carousel>
           </li>
@@ -52,7 +52,7 @@ export default function Top() {
               title="Montreal Summer 2020"
               desc="Nikon D300"
               type="photo"
-              image={photos.allFile.edges[2].node.childImageSharp.fluid}
+              image={photos.photo.edges[0].node.childImageSharp.fluid}
               link="/#photography">
             </Carousel>
           </li>
@@ -64,7 +64,31 @@ export default function Top() {
 
 const query = graphql`
   query recentQuery {
-    allFile(filter: {absolutePath: {regex: "/recent/"}}) {
+    code: allFile(filter: {absolutePath: {regex: "/Sequencer/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    music: allFile(filter: {absolutePath: {regex: "/Andria/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    photo: allFile(filter: {absolutePath: {regex: "/Cottage/"}}) {
       edges {
         node {
           id

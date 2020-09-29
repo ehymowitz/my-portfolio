@@ -8,8 +8,6 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Photography({heading}) {
   const photos = useStaticQuery(query)
 
-  console.log(photos.cottage)
-
   const [ref, inView] = useInView({
     threshold: 0.2
   })
