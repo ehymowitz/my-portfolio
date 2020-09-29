@@ -8,6 +8,8 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Photography({heading}) {
   const photos = useStaticQuery(query)
 
+  console.log(photos.cottage)
+
   const [ref, inView] = useInView({
     threshold: 0.2
   })
@@ -34,40 +36,41 @@ export default function Photography({heading}) {
         data-sal-duration="1500"
       >
         <PhotoCover
+          link="cottage2020"
+          cover={photos.cottage.edges[0].node.childImageSharp.fluid}
+          title="Cottage Trip 2020"
+          camera="Nikon D300"
+        />
+        <PhotoCover
           link="montreal-summer2020"
           cover={photos.summer.edges[0].node.childImageSharp.fluid}
           title="Montreal Summer 2020"
           camera="Nikon D300"
-        >
-        </PhotoCover>
+        />
         <PhotoCover
           link="concert-photos"
           cover={photos.concert.edges[0].node.childImageSharp.fluid}
           title="Concert Photography"
           camera="Nikon D7000"
-        >
-        </PhotoCover>
+        />
         <PhotoCover
           link="montreal-winter2020"
           cover={photos.winter.edges[0].node.childImageSharp.fluid}
           title="Montreal Winter/ Spring 2020"
           camera="Nikon D300, Film"
-        >
-        </PhotoCover>
+        />
         <PhotoCover
           link="van2020"
           cover={photos.van.edges[0].node.childImageSharp.fluid}
           title="Vancouver 2020"
           camera="Nikon D300"
-        >
-        </PhotoCover>
+        />
         <PhotoCover
           link="belize2019"
           cover={photos.belize.edges[0].node.childImageSharp.fluid}
           title="Belize 2019"
           camera="Film, Cell Phone"
-        >
-        </PhotoCover>
+        />
       </div>
     </div>
   )
@@ -124,6 +127,18 @@ const query = graphql`
       }
     }
     belize: allFile(filter: {absolutePath: {regex: "/covers\/Belize/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    cottage: allFile(filter: {absolutePath: {regex: "/covers\/Cottage/"}}) {
       edges {
         node {
           id
