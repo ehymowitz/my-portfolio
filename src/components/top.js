@@ -49,7 +49,7 @@ export default function Top() {
           </li>
           <li>
             <Carousel
-              title="Montreal Summer 2020"
+              title="Cottage Trip 2020"
               desc="Nikon D300"
               type="photo"
               image={photos.photo.edges[0].node.childImageSharp.fluid}
