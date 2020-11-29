@@ -69,16 +69,6 @@ export default function Projects() {
           image={photos.DDF.edges[0].node.childImageSharp.fluid}
           >
         </Project>
-        <Project
-          orient="left"
-          link="https://blockwagon.herokuapp.com/"
-          title="Blockwagon"
-          desc="Online marketplace for VHS tapes"
-          stack={["Rails.svg", "Ruby.svg", "HTML5.svg", "CSS3.png", "Javascript.png"]}
-          api="OMDB for generating video information"
-          image={photos.blockwagon.edges[0].node.childImageSharp.fluid}
-          >
-        </Project>
       </div>
     </div>
   )
@@ -123,18 +113,6 @@ const query = graphql`
       }
     }
     DDF: allFile(filter: {absolutePath: {regex: "/DDF/"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(fit: COVER) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    blockwagon: allFile(filter: {absolutePath: {regex: "/Blockwagon/"}}) {
       edges {
         node {
           id

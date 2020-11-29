@@ -40,11 +40,11 @@ export default function Top() {
           </li>
           <li>
             <Carousel
-              title="OAP Live Online"
-              desc="with Andria Piperni"
+              title="Northern Touch Music Festival"
+              desc="with Hansom Eli"
               type="music"
               image={photos.music.edges[0].node.childImageSharp.fluid}
-              link ="https://youtu.be/D78yEbn_03I">
+              link ="https://www.youtube.com/watch?v=a8sppGMn8gc&feature=youtu.be&t=1037">
             </Carousel>
           </li>
           <li>
@@ -76,7 +76,7 @@ const query = graphql`
         }
       }
     }
-    music: allFile(filter: {absolutePath: {regex: "/Andria/"}}) {
+    music: allFile(filter: {absolutePath: {regex: "/Hansom/"}}) {
       edges {
         node {
           id

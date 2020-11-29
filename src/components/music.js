@@ -35,7 +35,12 @@ export default function Music() {
         data-sal-duration="1500"
       >
         <MusicCard
-          link="https://www.youtube.com/embed/D78yEbn_03I"
+          link="https://www.youtube.com/embed/a8sppGMn8gc?start=1045"
+          title="Northern Touch Music Festival"
+          band="Hansom Eli">
+        </MusicCard>
+        <MusicCard
+          link="https://www.youtube.com/embed/D78yEbn_03I?start=960"
           title="OAP Live Online"
           band="Andria Piperni">
         </MusicCard>
