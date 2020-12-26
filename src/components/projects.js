@@ -35,7 +35,7 @@ export default function Projects() {
           title="Set Sharer (In development)"
           desc="For creating and sharing music sets"
           stack={["Next.png", "MongoDB.svg", "Javascript.png", "Vercel.png", "Sass.png"]}
-          api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
+          api="Many, for grabbing and displaying song information"
           image={photos.setsharer.edges[0].node.childImageSharp.fluid}
         />
         <Project
