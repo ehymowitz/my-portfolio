@@ -29,16 +29,24 @@ export default function Projects() {
         <h1 ref={ref} >Projects I've Developed</h1>
       </div>
       <div className="project-container">
-      <Project
-        orient="left"
-        link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/"
-        title="Sampler Sequencer"
-        desc="MPC3000 / TR808 inspired webapp"
-        stack={["React.svg", "Firebase.png", "Javascript.png", "MaterialUI.svg", "Sass.png"]}
-        api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
-        image={photos.sequencer.edges[0].node.childImageSharp.fluid}
-        >
-      </Project>
+        <Project
+          orient="right"
+          link="https://set-sharer.vercel.app/"
+          title="Set Sharer (In development)"
+          desc="For creating and sharing music sets"
+          stack={["Next.png", "MongoDB.svg", "Javascript.png", "Vercel.png", "Sass.png"]}
+          api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
+          image={photos.setsharer.edges[0].node.childImageSharp.fluid}
+        />
+        <Project
+          orient="left"
+          link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/"
+          title="Sampler Sequencer"
+          desc="MPC3000 / TR808 inspired webapp"
+          stack={["React.svg", "Firebase.png", "Javascript.png", "MaterialUI.svg", "Sass.png"]}
+          api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
+          image={photos.sequencer.edges[0].node.childImageSharp.fluid}
+        />
         <Project
           orient="right"
           link="http://mezcalmtl.ca/"
@@ -47,8 +55,7 @@ export default function Projects() {
           stack={["Gatsby.png", "MaterialUI.svg", "Sass.png", "GraphQL.svg", "Getform.svg"]}
           api="GetForm connected to Zapier and Google Docs for event registration"
           image={photos.mezcal.edges[0].node.childImageSharp.fluid}
-          >
-        </Project>
+        />
         <Project
           orient="left"
           link="http://hymowitz.org/"
@@ -57,8 +64,7 @@ export default function Projects() {
           stack={["Gatsby.png", "GraphQL.svg", "Sass.png", "Netlify.png"]}
           api=""
           image={photos.portfolio.edges[0].node.childImageSharp.fluid}
-          >
-        </Project>
+        />
         <Project
           orient="right"
           link="http://www.dontdiefood.com/"
@@ -67,8 +73,7 @@ export default function Projects() {
           stack={["Rails.svg", "Ruby.svg", "HTML5.svg", "CSS3.png", "Javascript.png"]}
           api="Spoonacular for recipe generation"
           image={photos.DDF.edges[0].node.childImageSharp.fluid}
-          >
-        </Project>
+        />
       </div>
     </div>
   )
@@ -76,6 +81,18 @@ export default function Projects() {
 
 const query = graphql`
   query projectsQuery {
+    setsharer: allFile(filter: {absolutePath: {regex: "/SetSharer/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(fit: COVER) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
     sequencer: allFile(filter: {absolutePath: {regex: "/Sequencer/"}}) {
       edges {
         node {

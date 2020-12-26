@@ -31,21 +31,21 @@ export default function Top() {
         <ul className = 'projects-container'>
           <li>
             <Carousel
-              title="S E Q U E N C E"
-              desc="Sampler/ Sequencer Webapp"
+              title="Set Sharer"
+              desc="For creating and sharing music sets"
               type="code"
               image={photos.code.edges[0].node.childImageSharp.fluid}
-              link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/">
-            </Carousel>
+              link="https://set-sharer.vercel.app/"
+            />
           </li>
           <li>
             <Carousel
-              title="Northern Touch Music Festival"
-              desc="with Hansom Eli"
+              title="Christmastime"
+              desc="with Andria Piperni"
               type="music"
               image={photos.music.edges[0].node.childImageSharp.fluid}
-              link ="https://www.youtube.com/watch?v=a8sppGMn8gc&feature=youtu.be&t=1037">
-            </Carousel>
+              link="https://www.youtube.com/watch?v=pjll0_TKvLQ"
+            />
           </li>
           <li>
             <Carousel
@@ -53,8 +53,8 @@ export default function Top() {
               desc="Nikon D300"
               type="photo"
               image={photos.photo.edges[0].node.childImageSharp.fluid}
-              link="/#photography">
-            </Carousel>
+              link="/#photography"
+            />
           </li>
         </ul>
       </div>
@@ -64,7 +64,7 @@ export default function Top() {
 
 const query = graphql`
   query recentQuery {
-    code: allFile(filter: {absolutePath: {regex: "/Sequencer/"}}) {
+    code: allFile(filter: {absolutePath: {regex: "/SetSharer/"}}) {
       edges {
         node {
           id
@@ -76,7 +76,7 @@ const query = graphql`
         }
       }
     }
-    music: allFile(filter: {absolutePath: {regex: "/Hansom/"}}) {
+    music: allFile(filter: {absolutePath: {regex: "/xmastime/"}}) {
       edges {
         node {
           id
