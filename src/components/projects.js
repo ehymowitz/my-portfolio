@@ -26,15 +26,16 @@ export default function Projects() {
         data-sal-easing="ease"
         data-sal-duration="1500"
       >
-        <h1 ref={ref} >Projects I've Developed</h1>
+        <h1 ref={ref} >Personal Projects</h1>
+        <small>Contact me to see other projects I've worked on!</small>
       </div>
       <div className="project-container">
         <Project
           orient="right"
           link="https://set-sharer.vercel.app/"
-          title="Set Sharer (In development)"
+          title="Set Sharer"
           desc="For creating and sharing music sets"
-          stack={["Next.png", "MongoDB.svg", "Javascript.png", "Vercel.png", "Sass.png"]}
+          stack={["Next.png", "MongoDB.svg", "Sass.png", "Vercel.png"]}
           api="Many, for grabbing and displaying song information"
           image={photos.setsharer.edges[0].node.childImageSharp.fluid}
         />
@@ -43,36 +44,18 @@ export default function Projects() {
           link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/"
           title="Sampler Sequencer"
           desc="MPC3000 / TR808 inspired webapp"
-          stack={["React.svg", "Firebase.png", "Javascript.png", "MaterialUI.svg", "Sass.png"]}
+          stack={["React.svg", "Firebase.png", "Sass.png", "Netlify.png"]}
           api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
           image={photos.sequencer.edges[0].node.childImageSharp.fluid}
         />
         <Project
           orient="right"
-          link="http://mezcalmtl.ca/"
-          title="Mezcal Montreal"
-          desc="Mezcal Montreal landing page"
-          stack={["Gatsby.png", "MaterialUI.svg", "Sass.png", "GraphQL.svg", "Getform.svg"]}
-          api="GetForm connected to Zapier and Google Docs for event registration"
-          image={photos.mezcal.edges[0].node.childImageSharp.fluid}
-        />
-        <Project
-          orient="left"
           link="http://hymowitz.org/"
           title="This very website"
           desc="My portfolio! Where I get to show off my superpowers"
           stack={["Gatsby.png", "GraphQL.svg", "Sass.png", "Netlify.png"]}
           api=""
           image={photos.portfolio.edges[0].node.childImageSharp.fluid}
-        />
-        <Project
-          orient="right"
-          link="http://www.dontdiefood.com/"
-          title="Don't Die Food"
-          desc="Mobile-first webapp for sharing food in local communities"
-          stack={["Rails.svg", "Ruby.svg", "HTML5.svg", "CSS3.png", "Javascript.png"]}
-          api="Spoonacular for recipe generation"
-          image={photos.DDF.edges[0].node.childImageSharp.fluid}
         />
       </div>
     </div>

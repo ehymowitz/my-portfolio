@@ -23,7 +23,7 @@ export default function Top() {
     <div className='page-section' id='top' ref={ref}>
       <div className = 'hello-text'>
         <h1>Hi, I'm Elie</h1>
-        <h2>I'm a web developer / musician / maker of things.</h2>
+        <h2>I'm a web developer / musician / occasional photographer</h2>
         <h2>Born in Seattle, living in Montreal.</h2>
       </div>
       <div className = 'recent-projects'>
