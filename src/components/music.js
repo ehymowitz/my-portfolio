@@ -4,9 +4,7 @@ import colorChange from "../../color-change"
 import { document } from "browser-monads"
 import MusicCard from "../components/cards/music-card"
 
-
 export default function Music() {
-
   const [ref, inView] = useInView({
     threshold: 0.5,
   })

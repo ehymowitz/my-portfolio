@@ -49,7 +49,7 @@ export default function PhotoCollection({ data }) {
             </Masonry>
           </SRLWrapper>
           <Photography
-            heading="Other Collections">
+            heading="All Collections">
           </Photography>
         </div>
       </SimpleReactLightbox>
