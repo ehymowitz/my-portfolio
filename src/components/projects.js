@@ -41,7 +41,7 @@ export default function Projects() {
         />
         <Project
           orient="left"
-          link="https://vibrant-dubinsky-2bb5fe.netlify.app/#/"
+          link="https://sampler-sequencer.netlify.app/#/"
           title="Sampler Sequencer"
           desc="MPC3000 / TR808 inspired webapp"
           stack={["React.svg", "Firebase.png", "Sass.png", "Netlify.png"]}
