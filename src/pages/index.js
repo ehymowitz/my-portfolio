@@ -11,7 +11,7 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
 
-const fade = window.matchMedia("(min-width: 770px)").matches
+const fade = typeof window !== "undefined" ? window.matchMedia("(min-width: 770px)").matches : ""
 
 export default function Home() {
   return (
@@ -19,14 +19,14 @@ export default function Home() {
       <Fixed/>
       <Top />
       <Projects
-        fade={typeof fade !== 'undefined' ? fade : ""}
+        fade={fade}
       />
       <Music
-        fade={typeof fade !== 'undefined' ? fade : ""}
+        fade={fade}
       />
       <Photography
         heading = "Photos I've Taken"
-        fade={typeof fade !== 'undefined' ? fade : ""}
+        fade={fade}
       />
       </Layout>
   )
