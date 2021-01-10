@@ -5,7 +5,7 @@ import { document } from "browser-monads"
 import Project from "../components/cards/project"
 import { useStaticQuery, graphql } from "gatsby"
 
-export default function Projects({fade}) {
+export default function Projects() {
 
   const photos = useStaticQuery(query)
 
@@ -22,9 +22,9 @@ export default function Projects({fade}) {
   return (
     <div className='page-section' id='projects' >
       <div className="heading"
-         data-sal={fade ? "fade" : ""}
+         data-sal="fade"
          data-sal-easing="ease"
-         data-sal-duration={fade ? "1500" : 0}
+         data-sal-duration="1500"
          >
         <h1 ref={ref} >Personal Projects</h1>
         <small>Contact me to see other projects I've worked on!</small>
@@ -38,7 +38,6 @@ export default function Projects({fade}) {
           stack={["Next.png", "MongoDB.svg", "Sass.png", "Vercel.png"]}
           api="Many, for grabbing and displaying song information"
           image={photos.setsharer.edges[0].node.childImageSharp.fluid}
-          fade={fade}
         />
         <Project
           orient="left"
@@ -48,7 +47,6 @@ export default function Projects({fade}) {
           stack={["React.svg", "Firebase.png", "Sass.png", "Netlify.png"]}
           api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
           image={photos.sequencer.edges[0].node.childImageSharp.fluid}
-          fade={fade}
         />
         <Project
           orient="right"
@@ -58,7 +56,6 @@ export default function Projects({fade}) {
           stack={["Gatsby.png", "GraphQL.svg", "Sass.png", "Netlify.png"]}
           api=""
           image={photos.portfolio.edges[0].node.childImageSharp.fluid}
-          fade={fade}
         />
       </div>
     </div>

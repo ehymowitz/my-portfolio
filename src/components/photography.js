@@ -5,7 +5,7 @@ import { document } from "browser-monads"
 import PhotoCover from "./cards/photo-cover"
 import { useStaticQuery, graphql } from "gatsby"
 
-export default function Photography({heading, fade}) {
+export default function Photography({heading}) {
   const photos = useStaticQuery(query)
 
   const [ref, inView] = useInView({
@@ -21,17 +21,17 @@ export default function Photography({heading, fade}) {
   return (
     <div className='page-section' id='photography' >
       <div className="heading"
-        data-sal={fade ? "fade" : ""}
+        data-sal="fade"
         data-sal-easing="ease"
-        data-sal-duration={fade ? "1500" : 0}
+        data-sal-duration="1500"
       >
         <h1>{heading}</h1>
       </div>
       <div ref={ref} className="photo-collections"
-        data-sal={fade ? "fade" : ""}
         data-sal-delay="200"
+        data-sal="fade"
         data-sal-easing="ease"
-        data-sal-duration={fade ? "1500" : 0}
+        data-sal-duration="1500"
       >
         <PhotoCover
           link="cottage2020"

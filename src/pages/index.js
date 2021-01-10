@@ -10,23 +10,15 @@ if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
   require("smooth-scroll")('a[href*="#"]')
 }
-
-const fade = typeof window !== "undefined" ? window.matchMedia("(min-width: 770px)").matches : ""
-
 export default function Home() {
   return (
     <Layout>
       <Fixed/>
       <Top />
-      <Projects
-        fade={fade}
-      />
-      <Music
-        fade={fade}
-      />
+      <Projects />
+      <Music />
       <Photography
         heading = "Photos I've Taken"
-        fade={fade}
       />
       </Layout>
   )
