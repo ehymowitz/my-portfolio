@@ -1,13 +1,13 @@
 import React from "react"
 import Img from "gatsby-image"
 
-export default function Project({orient, link, title, desc, stack, api, image}) {
+export default function Project({orient, link, title, desc, stack, api, image, fade}) {
   const classes = "project-card " + orient
   const usedapi = "*Additional APIs: " + api
 
   return (
     <div className={classes}
-      data-sal="fade"
+      data-sal={ fade ? "fade" : ""}
       data-sal-easing="ease"
       data-sal-duration="1500"
     >
