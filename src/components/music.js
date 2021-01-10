@@ -4,7 +4,7 @@ import colorChange from "../../color-change"
 import { document } from "browser-monads"
 import MusicCard from "../components/cards/music-card"
 
-export default function Music() {
+export default function Music({fade}) {
   const [ref, inView] = useInView({
     threshold: 0.5,
   })
@@ -20,17 +20,17 @@ export default function Music() {
   return (
     <div className='page-section' id='music'>
       <div className="heading"
-        data-sal="fade"
+        data-sal={fade ? "fade" : ""}
         data-sal-easing="ease"
-        data-sal-duration="1500"
+        data-sal-duration={fade ? "1500" : 0}
       >
         <h1>Music I've Played</h1>
       </div>
       <div ref={ref} className="music-container"
-        data-sal="fade"
+        data-sal={fade ? "fade" : ""}
         data-sal-delay="200"
         data-sal-easing="ease"
-        data-sal-duration="1500"
+        data-sal-duration={fade ? "1500" : 0}
       >
         <MusicCard
           link="https://www.youtube.com/embed/pjll0_TKvLQ"
