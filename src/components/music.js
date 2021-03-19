@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer"
 import colorChange from "../../color-change"
 import { document } from "browser-monads"
 import MusicCard from "../components/cards/music-card"
-import Music from "../data/music"
+import MusicData from "../data/musicdata"
 
 export default function Music({ fade }) {
   const [ref, inView] = useInView({
@@ -36,9 +36,11 @@ export default function Music({ fade }) {
         data-sal-easing="ease"
         data-sal-duration="1500"
       >
-        {data.map((musicItem, i) => {
+        {MusicData.map((musicItem, i) => {
+          console.log(musicItem)
           return (
             <MusicCard
+              key={i}
               link={musicItem.link}
               title={musicItem.title}
               band={musicItem.band}
