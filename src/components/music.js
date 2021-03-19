@@ -3,8 +3,9 @@ import { useInView } from "react-intersection-observer"
 import colorChange from "../../color-change"
 import { document } from "browser-monads"
 import MusicCard from "../components/cards/music-card"
+import Music from "../data/music"
 
-export default function Music({fade}) {
+export default function Music({ fade }) {
   const [ref, inView] = useInView({
     threshold: 0.5,
   })
@@ -18,75 +19,32 @@ export default function Music({fade}) {
   }
 
   return (
-    <div className='page-section' id='music'>
-      <div className="heading"
+    <div className="page-section" id="music">
+      <div
+        className="heading"
         data-sal={fade ? "fade" : ""}
         data-sal-easing="ease"
         data-sal-duration="1500"
       >
         <h1>Music I've Played</h1>
       </div>
-      <div ref={ref} className="music-container"
+      <div
+        ref={ref}
+        className="music-container"
         data-sal-delay="200"
         data-sal={fade ? "fade" : ""}
         data-sal-easing="ease"
         data-sal-duration="1500"
       >
-        <MusicCard
-          link="https://www.youtube.com/embed/pjll0_TKvLQ"
-          title="Christmastime"
-          band="Andria Piperni"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/cPGjnA0F9OI"
-          title="Summer Rise (Live at The Loft)"
-          band="Hansom Eli"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/04NIMCumy5w"
-          title="Flow Of The River (Live at The Loft)"
-          band="Hansom Ēli"
-        />
-        <MusicCard
-        link="https://www.youtube.com/embed/xXIYXOJQsW0"
-        title="Soho (Live at The Loft)"
-        band="Hansom Eli"
-        />
-        <MusicCard
-        link="https://www.youtube.com/embed/a8sppGMn8gc?start=1045"
-        title="Northern Touch Music Festival"
-        band="Hansom Eli"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/D78yEbn_03I?start=960"
-          title="OAP Live Online"
-          band="Andria Piperni"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/LIs5VFrIQmQ"
-          title="Say Something [Live at Artjam]"
-          band="Andria Piperni"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/LJVebBmJKI8"
-          title="Disco Yes by Tom Misch [Live at Blue Dog]"
-          band="Cooler Than Freezing"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/pei4ttxVYXs"
-          title="Wooden Sphere [Live Studio]"
-          band="Aquarius Dreams"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/Q0QxADdTedk"
-          title="Mystery of Love [Live Studio]"
-          band="Aquarius Dreams"
-        />
-        <MusicCard
-          link="https://www.youtube.com/embed/vxTMA7L_Ckg"
-          title="Bound by the Sea [Live Studio]"
-          band="Aquarius Dreams"
-        />
+        {data.map((musicItem, i) => {
+          return (
+            <MusicCard
+              link={musicItem.link}
+              title={musicItem.title}
+              band={musicItem.band}
+            />
+          )
+        })}
       </div>
     </div>
   )

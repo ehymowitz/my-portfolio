@@ -5,8 +5,7 @@ import { document } from "browser-monads"
 import Project from "../components/cards/project"
 import { useStaticQuery, graphql } from "gatsby"
 
-export default function Projects({fade}) {
-
+export default function Projects({ fade }) {
   const photos = useStaticQuery(query)
 
   const [ref, inView] = useInView({
@@ -20,14 +19,14 @@ export default function Projects({fade}) {
   }
 
   return (
-    <div className='page-section' id='projects' >
-      <div className="heading"
-         data-sal={fade ? "fade" : ""}
-         data-sal-easing="ease"
-         data-sal-duration="1500"
+    <div className="page-section" id="projects">
+      <div
+        className="heading"
+        data-sal={fade ? "fade" : ""}
+        data-sal-easing="ease"
+        data-sal-duration="1500"
       >
-        <h1 ref={ref} >Personal Projects</h1>
-        <small>Contact me to see other projects I've worked on!</small>
+        <h1 ref={ref}>Projects I Maintain</h1>
       </div>
       <div className="project-container">
         <Project
@@ -42,16 +41,6 @@ export default function Projects({fade}) {
         />
         <Project
           orient="left"
-          link="https://sampler-sequencer.netlify.app/#/"
-          title="Sampler Sequencer"
-          desc="MPC3000 / TR808 inspired webapp"
-          stack={["React.svg", "Firebase.png", "Sass.png", "Netlify.png"]}
-          api="Tone.js for synthesizer sounds, CitizenDJ for sample sounds"
-          image={photos.sequencer.edges[0].node.childImageSharp.fluid}
-          fade={fade}
-        />
-        <Project
-          orient="right"
           link="http://hymowitz.org/"
           title="This very website"
           desc="My portfolio! Where I get to show off my superpowers"
@@ -67,7 +56,7 @@ export default function Projects({fade}) {
 
 const query = graphql`
   query projectsQuery {
-    setsharer: allFile(filter: {absolutePath: {regex: "/SetSharer/"}}) {
+    setsharer: allFile(filter: { absolutePath: { regex: "/SetSharer/" } }) {
       edges {
         node {
           id
@@ -79,43 +68,7 @@ const query = graphql`
         }
       }
     }
-    sequencer: allFile(filter: {absolutePath: {regex: "/Sequencer/"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(fit: COVER) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    mezcal: allFile(filter: {absolutePath: {regex: "/MezcalMTL/"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(fit: COVER) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    portfolio: allFile(filter: {absolutePath: {regex: "/Portfolio/"}}) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            fluid(fit: COVER) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    DDF: allFile(filter: {absolutePath: {regex: "/DDF/"}}) {
+    portfolio: allFile(filter: { absolutePath: { regex: "/Portfolio/" } }) {
       edges {
         node {
           id

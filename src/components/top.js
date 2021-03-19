@@ -6,11 +6,10 @@ import Carousel from "./cards/carousel"
 import { useStaticQuery, graphql } from "gatsby"
 
 export default function Top() {
-
   const photos = useStaticQuery(query)
 
   const [ref, inView] = useInView({
-    threshold: 0.9
+    threshold: 0.9,
   })
 
   const linkedin = document.querySelector("#linkedin > a > svg")
@@ -20,15 +19,15 @@ export default function Top() {
   }
 
   return (
-    <div className='page-section' id='top' ref={ref}>
-      <div className = 'hello-text'>
+    <div className="page-section" id="top" ref={ref}>
+      <div className="hello-text">
         <h1>Hi, I'm Elie</h1>
         <h2>I'm a web developer / musician / occasional photographer</h2>
         <h2>Born in Seattle, living in Montreal</h2>
       </div>
-      <div className = 'recent-projects'>
-        <h3>Recent Projects</h3>
-        <ul className = 'projects-container'>
+      <div className="recent-projects">
+        <h3>Latest Projects</h3>
+        <ul className="projects-container">
           <li>
             <Carousel
               title="Set Sharer"
@@ -64,7 +63,7 @@ export default function Top() {
 
 const query = graphql`
   query recentQuery {
-    code: allFile(filter: {absolutePath: {regex: "/SetSharer/"}}) {
+    code: allFile(filter: { absolutePath: { regex: "/SetSharer/" } }) {
       edges {
         node {
           id
@@ -76,7 +75,7 @@ const query = graphql`
         }
       }
     }
-    music: allFile(filter: {absolutePath: {regex: "/xmastime/"}}) {
+    music: allFile(filter: { absolutePath: { regex: "/xmastime/" } }) {
       edges {
         node {
           id
@@ -88,7 +87,7 @@ const query = graphql`
         }
       }
     }
-    photo: allFile(filter: {absolutePath: {regex: "/Cottage/"}}) {
+    photo: allFile(filter: { absolutePath: { regex: "/Cottage/" } }) {
       edges {
         node {
           id
