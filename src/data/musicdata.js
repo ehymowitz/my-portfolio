@@ -1,5 +1,10 @@
 const MusicData = [
   {
+    link: "https://www.youtube.com/embed/MV99QSON4dk",
+    title: "John Redcorn (SiR Cover)",
+    band: "Casey Burns & The Spicy Boys",
+  },
+  {
     link: "https://www.youtube.com/embed/pjll0_TKvLQ",
     title: "Christmastime",
     band: "Andria Piperni",

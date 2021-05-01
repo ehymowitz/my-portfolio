@@ -39,11 +39,11 @@ export default function Top() {
           </li>
           <li>
             <Carousel
-              title="Christmastime"
-              desc="with Andria Piperni"
+              title="John Redcorn (SiR Cover)"
+              desc="Casey Burns & The Spicy Boys"
               type="music"
               image={photos.music.edges[0].node.childImageSharp.fluid}
-              link="https://www.youtube.com/watch?v=pjll0_TKvLQ"
+              link="https://www.youtube.com/watch?v=MV99QSON4dk"
             />
           </li>
           <li>
@@ -75,7 +75,7 @@ const query = graphql`
         }
       }
     }
-    music: allFile(filter: { absolutePath: { regex: "/xmastime/" } }) {
+    music: allFile(filter: { absolutePath: { regex: "/johnRedcorn/" } }) {
       edges {
         node {
           id
