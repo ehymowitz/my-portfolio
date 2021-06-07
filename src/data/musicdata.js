@@ -1,5 +1,15 @@
 const MusicData = [
   {
+    link: "https://www.youtube.com/embed/mLJfaLbIOgU",
+    title: "Walk Away (Kelly Clarkson Cover)",
+    band: "Ishana and Friends",
+  },
+  {
+    link: "https://www.youtube.com/embed/_484oLelz3k",
+    title: "Lover So Soft (Kelly Clarkson Cover)",
+    band: "Ishana and Friends",
+  },
+  {
     link: "https://www.youtube.com/embed/MV99QSON4dk",
     title: "John Redcorn (SiR Cover)",
     band: "Casey Burns & The Spicy Boys",

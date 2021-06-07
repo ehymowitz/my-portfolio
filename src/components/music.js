@@ -37,7 +37,6 @@ export default function Music({ fade }) {
         data-sal-duration="1500"
       >
         {MusicData.map((musicItem, i) => {
-          console.log(musicItem)
           return (
             <MusicCard
               key={i}

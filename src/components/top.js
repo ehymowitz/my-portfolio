@@ -39,11 +39,11 @@ export default function Top() {
           </li>
           <li>
             <Carousel
-              title="John Redcorn (SiR Cover)"
-              desc="Casey Burns & The Spicy Boys"
+              title="Walk Away (Kelly Clarkson Cover)"
+              desc="Ishana And Friends"
               type="music"
               image={photos.music.edges[0].node.childImageSharp.fluid}
-              link="https://www.youtube.com/watch?v=MV99QSON4dk"
+              link="https://www.youtube.com/watch?v=mLJfaLbIOgU"
             />
           </li>
           <li>
@@ -75,7 +75,7 @@ const query = graphql`
         }
       }
     }
-    music: allFile(filter: { absolutePath: { regex: "/johnRedcorn/" } }) {
+    music: allFile(filter: { absolutePath: { regex: "/AndFriends/" } }) {
       edges {
         node {
           id
